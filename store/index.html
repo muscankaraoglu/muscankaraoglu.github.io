@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Muscan Game Factory — App Store & Market Asset Önizleyici</title>
+  <meta name="description" content="Muscan Game Factory oyun kataloğu ve App Store / Google Play market asset önizleme ortamı.">
+  <link rel="icon" type="image/png" href="./app-icon.png">
+  <link rel="apple-touch-icon" href="./app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"SF Pro Text"', 'Inter', 'sans-serif'],
+          },
+          colors: {
+            ios: {
+              blue: '#007AFF',
+              bg: '#F2F2F7',
+              card: '#FFFFFF',
+              darkBg: '#000000',
+              darkCard: '#1C1C1E',
+              darkElevated: '#2C2C2E',
+            },
+            gplay: {
+              green: '#01875F',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .squircle {
+      border-radius: 22.5%;
+    }
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .game-iframe-wrapper {
+      width: 100%;
+      height: calc(100vh - 56px);
+      transition: all 0.3s ease;
+    }
+    .game-iframe-wrapper.portrait {
+      max-width: 440px;
+      margin: 0 auto;
+      height: calc(100vh - 76px);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+      border: 4px solid #2c2c2e;
+    }
+    .markdown-body h1 { font-size: 1.35rem; font-weight: 700; margin: 1rem 0 0.5rem; }
+    .markdown-body h2 { font-size: 1.1rem; font-weight: 700; margin: 1rem 0 0.4rem; border-bottom: 1px solid rgba(128,128,128,0.2); padding-bottom: 0.25rem; }
+    .markdown-body h3 { font-size: 0.95rem; font-weight: 600; margin: 0.75rem 0 0.25rem; }
+    .markdown-body p { margin: 0.4rem 0; line-height: 1.6; }
+    .markdown-body ul { list-style: disc; padding-left: 1.25rem; margin: 0.4rem 0; }
+    .markdown-body code { background: rgba(128,128,128,0.15); padding: 0.1rem 0.35rem; border-radius: 4px; font-size: 0.85em; }
+  </style>
+</head>
+<body class="min-h-screen bg-[#F2F2F7] dark:bg-[#000000] text-[#1C1C1E] dark:text-[#F2F2F7] transition-colors duration-200">
+
+  <!-- TOP APP STORE NAVBAR -->
+  <header class="sticky top-0 z-40 bg-white/85 dark:bg-[#1C1C1E]/85 backdrop-blur-xl border-b border-black/10 dark:border-white/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="./" class="flex items-center gap-2.5">
+          <img src="./app-icon.png" alt="Muscan Game Factory" class="w-9 h-9 squircle shadow-sm object-cover border border-black/10 dark:border-white/10">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-lg tracking-tight">Muscan Game Factory</span>
+            </div>
+            <p class="text-[11px] text-gray-500 dark:text-gray-400 hidden sm:block">Muscan Game Factory Market Asset &amp; Katalog Önizleyici</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="flex items-center gap-2.5">
+        <div class="relative hidden md:block w-64">
+          <input
+            id="searchInput"
+            type="text"
+            placeholder="Oyun, tür veya asset ara..."
+            class="w-full bg-black/5 dark:bg-white/10 rounded-xl px-3.5 py-2 pl-9 text-sm focus:outline-none focus:ring-2 focus:ring-[#007AFF] placeholder-gray-500 dark:placeholder-gray-400"
+          >
+          <svg class="w-4 h-4 text-gray-400 absolute left-3 top-2.5 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+        </div>
+
+        <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          <span id="gameTotalCount">0</span> Oyun
+        </span>
+
+        <button id="themeToggle" title="Açık / Koyu Tema" class="p-2 rounded-xl bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/15 transition-colors text-sm">
+          <span id="themeIcon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CATALOG VIEW -->
+  <main id="catalogView" class="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-8">
+
+    <!-- TODAY / FEATURED BANNER SECTION -->
+    <section id="featuredSection" class="space-y-3 hidden">
+      <div class="flex items-baseline justify-between">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Öne Çıkan Market Assetleri</p>
+          <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Bugün</h1>
+        </div>
+        <span class="text-xs text-gray-500 dark:text-gray-400">Feature Graphic (1024×500) Önizlemesi</span>
+      </div>
+      <div id="featuredGrid" class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <!-- Populated via JS -->
+      </div>
+    </section>
+
+    <!-- FILTER BAR -->
+    <section class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+      <div id="categoryFilters" class="flex items-center gap-2 overflow-x-auto hide-scrollbar pb-1">
+        <button data-cat="all" class="filter-btn shrink-0 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-[#007AFF] text-white transition-all">
+          Tümü
+        </button>
+        <button data-cat="has-assets" class="filter-btn shrink-0 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-white dark:bg-[#1C1C1E] text-gray-700 dark:text-gray-300 border border-black/5 dark:border-white/10 hover:bg-black/5 transition-all">
+          ✨ Market Asset Hazır
+        </button>
+        <button data-cat="action" class="filter-btn shrink-0 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-white dark:bg-[#1C1C1E] text-gray-700 dark:text-gray-300 border border-black/5 dark:border-white/10 hover:bg-black/5 transition-all">
+          Aksiyon
+        </button>
+        <button data-cat="runner" class="filter-btn shrink-0 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-white dark:bg-[#1C1C1E] text-gray-700 dark:text-gray-300 border border-black/5 dark:border-white/10 hover:bg-black/5 transition-all">
+          Koşu
+        </button>
+        <button data-cat="arcade" class="filter-btn shrink-0 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-white dark:bg-[#1C1C1E] text-gray-700 dark:text-gray-300 border border-black/5 dark:border-white/10 hover:bg-black/5 transition-all">
+          Arcade
+        </button>
+        <button data-cat="strategy" class="filter-btn shrink-0 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-white dark:bg-[#1C1C1E] text-gray-700 dark:text-gray-300 border border-black/5 dark:border-white/10 hover:bg-black/5 transition-all">
+          Strateji
+        </button>
+        <button data-cat="cozy" class="filter-btn shrink-0 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-white dark:bg-[#1C1C1E] text-gray-700 dark:text-gray-300 border border-black/5 dark:border-white/10 hover:bg-black/5 transition-all">
+          3D Sandbox
+        </button>
+      </div>
+
+      <!-- Mobile Search -->
+      <div class="relative md:hidden">
+        <input
+          id="searchInputMobile"
+          type="text"
+          placeholder="Oyun veya tür ara..."
+          class="w-full bg-white dark:bg-[#1C1C1E] border border-black/10 dark:border-white/10 rounded-xl px-3.5 py-2 pl-9 text-sm focus:outline-none focus:ring-2 focus:ring-[#007AFF]"
+        >
+        <svg class="w-4 h-4 text-gray-400 absolute left-3 top-2.5 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ALL GAMES APP STORE GRID -->
+    <section class="space-y-3">
+      <div class="flex items-baseline justify-between">
+        <h2 class="text-xl font-bold tracking-tight">Tüm Oyunlar</h2>
+        <span class="text-xs text-gray-500 dark:text-gray-400">Mağaza sayfasını görmek için bir oyuna tıklayın</span>
+      </div>
+      <div id="gamesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Populated via JS -->
+      </div>
+    </section>
+
+    <!-- EMPTY STATE -->
+    <div id="emptyState" class="hidden text-center py-16 space-y-3">
+      <div class="text-4xl">📱</div>
+      <h3 class="text-lg font-bold">Eşleşen oyun bulunamadı</h3>
+      <p class="text-sm text-gray-500 dark:text-gray-400">Filtreyi sıfırlayıp tüm oyunları görebilirsiniz.</p>
+      <button onclick="resetFilters()" class="px-4 py-2 rounded-full bg-[#007AFF] text-white text-xs font-semibold">Filtreleri Sıfırla</button>
+    </div>
+  </main>
+
+  <!-- DUMMY APP STORE / GOOGLE PLAY DETAIL MODAL -->
+  <div id="storeModal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm overflow-y-auto">
+    <div class="min-h-screen flex items-start justify-center p-0 sm:p-6">
+      <div class="w-full max-w-4xl bg-white dark:bg-[#1C1C1E] sm:rounded-3xl shadow-2xl overflow-hidden border border-black/10 dark:border-white/10 my-0 sm:my-4">
+
+        <!-- MODAL TOP BAR (PLATFORM SWITCHER + CLOSE) -->
+        <div class="sticky top-0 z-20 bg-white/90 dark:bg-[#1C1C1E]/90 backdrop-blur-xl border-b border-black/10 dark:border-white/10 px-4 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-1.5 bg-black/5 dark:bg-white/10 p-1 rounded-xl">
+            <button data-store-tab="app-store" class="store-tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition-all bg-white dark:bg-[#2C2C2E] shadow-sm text-black dark:text-white">
+              🍎 App Store
+            </button>
+            <button data-store-tab="google-play" class="store-tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition-all text-gray-600 dark:text-gray-300">
+              🤖 Google Play
+            </button>
+            <button data-store-tab="raw" class="store-tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition-all text-gray-600 dark:text-gray-300">
+              🎮 Ham Gameplay
+            </button>
+            <button data-store-tab="aso" class="store-tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition-all text-gray-600 dark:text-gray-300">
+              📝 ASO &amp; Metadata
+            </button>
+          </div>
+
+          <button id="closeStoreModal" class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 flex items-center justify-center font-bold text-sm transition-colors">
+            ✕
+          </button>
+        </div>
+
+        <!-- MODAL BODY -->
+        <div id="storeModalContent" class="p-5 sm:p-8 space-y-6">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FULLSCREEN IMAGE LIGHTBOX -->
+  <div id="lightbox" class="hidden fixed inset-0 z-[60] bg-black/95 flex flex-col items-center justify-center p-4">
+    <div class="absolute top-4 left-4 right-4 flex items-center justify-between text-white">
+      <div class="text-xs sm:text-sm font-mono bg-white/10 px-3 py-1.5 rounded-lg">
+        <span id="lightboxTitle"></span>
+        <span id="lightboxDims" class="text-gray-400 ml-2"></span>
+      </div>
+      <button id="closeLightbox" class="w-9 h-9 rounded-full bg-white/15 hover:bg-white/25 flex items-center justify-center font-bold">✕</button>
+    </div>
+
+    <button id="lightboxPrev" class="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/15 hover:bg-white/25 text-white flex items-center justify-center text-xl">‹</button>
+    <img id="lightboxImg" src="" alt="Önizleme" class="max-h-[82vh] max-w-[90vw] object-contain rounded-xl shadow-2xl">
+    <button id="lightboxNext" class="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/15 hover:bg-white/25 text-white flex items-center justify-center text-xl">›</button>
+
+    <div id="lightboxCounter" class="absolute bottom-4 text-xs text-gray-400 font-mono"></div>
+  </div>
+
+  <!-- IN-PAGE ARCADE LAUNCHER FRAME -->
+  <div id="gameView" class="hidden fixed inset-0 z-[55] bg-[#07080c] flex flex-col text-white">
+    <div class="h-14 bg-[#11131c] border-b border-white/10 px-4 sm:px-6 flex items-center justify-between select-none">
+      <div class="flex items-center gap-3">
+        <button id="closeGameBtn" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-xs font-semibold transition-colors">
+          <span>←</span>
+          <span>Mağazaya Dön</span>
+        </button>
+        <div class="flex items-center gap-2">
+          <span id="activeGameTitle" class="font-bold text-sm sm:text-base">Oyun Yükleniyor...</span>
+          <span id="activeGameBadge" class="text-[10px] uppercase px-2 py-0.5 rounded bg-blue-500/20 text-blue-300 hidden md:inline"></span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button id="aspectRatioToggle" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-gray-300 text-xs border border-white/10">
+          <span id="aspectIcon">📱</span>
+          <span id="aspectLabel" class="hidden sm:inline">Mobil Boyut</span>
+        </button>
+        <button id="reloadGameBtn" title="Yeniden Başlat" class="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-gray-300">
+          ↻
+        </button>
+        <button id="fullscreenBtn" title="Tam Ekran" class="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-gray-300">
+          ⛶
+        </button>
+      </div>
+    </div>
+    <div class="flex-1 flex items-center justify-center bg-black p-0 sm:p-2 overflow-hidden">
+      <div id="iframeWrapper" class="game-iframe-wrapper">
+        <iframe id="gameIframe" class="w-full h-full border-0 bg-black" allow="autoplay; fullscreen; gamepad; pointer-lock" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let allGames = [];
+    let currentCategory = 'all';
+    let searchQuery = '';
+    let activeStoreGame = null;
+    let activeStoreAssets = null;
+    let activeStoreTab = 'app-store';
+    let activeDeviceTab = 'iphone67';
+    let lightboxImages = [];
+    let lightboxIndex = 0;
+
+    // Theme handling
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    if (localStorage.getItem('gf-theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+      themeIcon.textContent = '☀️';
+    }
+    themeToggle.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('gf-theme', isDark ? 'dark' : 'light');
+      themeIcon.textContent = isDark ? '☀️' : '🌙';
+    });
+
+    // Helper: render app icon (real PNG or stylized fallback)
+    function renderAppIcon(game, sizeClass = 'w-16 h-16') {
+      const iconUrl = game.storePreview?.iconUrl;
+      if (iconUrl) {
+        return `<img src="${iconUrl}" alt="${game.title}" class="${sizeClass} squircle object-cover shadow-md border border-black/10 dark:border-white/10 shrink-0 bg-gray-200 dark:bg-gray-800" loading="lazy">`;
+      }
+      return `
+        <div class="${sizeClass} squircle flex items-center justify-center text-3xl shadow-md shrink-0 border border-black/10 dark:border-white/10"
+             style="background: linear-gradient(135deg, ${game.accent || '#007AFF'}dd, ${game.accent || '#007AFF'}66);">
+          <span>${game.icon || '🎮'}</span>
+        </div>
+      `;
+    }
+
+    // Load games from /api/games with static GitHub Pages fallback (./data/games.json)
+    async function loadGames() {
+      try {
+        let res = await fetch('/api/games');
+        if (!res.ok) {
+          res = await fetch('./data/games.json');
+        }
+        allGames = await res.json();
+        document.getElementById('gameTotalCount').textContent = allGames.length;
+        renderFeatured();
+        renderGrid();
+      } catch (err) {
+        try {
+          const fallback = await fetch('./data/games.json');
+          allGames = await fallback.json();
+          document.getElementById('gameTotalCount').textContent = allGames.length;
+          renderFeatured();
+          renderGrid();
+        } catch (err2) {
+          console.error('Failed to load games:', err2);
+        }
+      }
+    }
+
+    // Render Today / Featured section (games with Feature Graphic)
+    function renderFeatured() {
+      const featured = allGames.filter(g => g.storePreview?.featureGraphicUrl);
+      const section = document.getElementById('featuredSection');
+      const grid = document.getElementById('featuredGrid');
+
+      if (featured.length === 0) {
+        section.classList.add('hidden');
+        return;
+      }
+
+      section.classList.remove('hidden');
+      grid.innerHTML = featured.map(game => `
+        <div onclick="openStorePage('${game.id}')" class="group cursor-pointer rounded-3xl overflow-hidden bg-white dark:bg-[#1C1C1E] shadow-lg hover:shadow-xl transition-all border border-black/5 dark:border-white/10 flex flex-col">
+          <div class="relative aspect-[1024/500] overflow-hidden bg-gray-900">
+            <img src="${game.storePreview.featureGraphicUrl}" alt="${game.title} Feature Graphic" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+            <div class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[11px] font-bold bg-black/60 text-white backdrop-blur-md">
+              ✨ ${game.storePreview.totalImages} Market Asset
+            </div>
+          </div>
+          <div class="p-4 flex items-center justify-between gap-3">
+            <div class="flex items-center gap-3 min-w-0">
+              ${renderAppIcon(game, 'w-12 h-12')}
+              <div class="min-w-0">
+                <h3 class="font-bold text-base truncate">${game.title}</h3>
+                <p class="text-xs text-gray-500 dark:text-gray-400 truncate">${game.genre}</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <button onclick="event.stopPropagation(); openStorePage('${game.id}')" class="px-3.5 py-1.5 rounded-full bg-black/5 dark:bg-white/10 hover:bg-black/10 text-xs font-bold text-[#007AFF] dark:text-[#0A84FF]">
+                Önizle
+              </button>
+              <button onclick="event.stopPropagation(); launchGame('${game.id}')" class="px-4 py-1.5 rounded-full bg-[#007AFF] hover:bg-[#0066D6] text-white text-xs font-bold">
+                OYNA
+              </button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Render Main App Store Grid
+    function renderGrid() {
+      const grid = document.getElementById('gamesGrid');
+      const empty = document.getElementById('emptyState');
+
+      const filtered = allGames.filter(g => {
+        const matchCat =
+          currentCategory === 'all' ? true :
+          currentCategory === 'has-assets' ? Boolean(g.storePreview?.hasAssets) :
+          g.category === currentCategory;
+
+        const q = searchQuery.toLowerCase().trim();
+        const matchSearch = !q ||
+          g.title.toLowerCase().includes(q) ||
+          g.genre.toLowerCase().includes(q) ||
+          g.description.toLowerCase().includes(q);
+
+        return matchCat && matchSearch;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        empty.classList.remove('hidden');
+        return;
+      }
+
+      empty.classList.add('hidden');
+      grid.innerHTML = filtered.map(game => {
+        const hasAssets = game.storePreview?.hasAssets;
+        const assetBadge = hasAssets
+          ? `<span class="inline-flex items-center gap-1 text-[11px] font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">✓ ${game.storePreview.totalImages} Asset Hazır</span>`
+          : `<span class="inline-flex items-center gap-1 text-[11px] font-medium px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400">Asset Bekleniyor</span>`;
+
+        return `
+          <div onclick="openStorePage('${game.id}')" class="group cursor-pointer bg-white dark:bg-[#1C1C1E] rounded-2xl p-4 shadow-sm hover:shadow-md transition-all border border-black/5 dark:border-white/10 flex flex-col justify-between gap-4">
+            <div class="flex items-start gap-3.5">
+              ${renderAppIcon(game, 'w-16 h-16')}
+              <div class="min-w-0 flex-1">
+                <div class="flex items-start justify-between gap-2">
+                  <h3 class="font-bold text-base leading-tight truncate">${game.title}</h3>
+                </div>
+                <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5 truncate">${game.genre}</p>
+                <div class="flex items-center gap-2 mt-2 flex-wrap">
+                  <span class="text-xs font-semibold text-amber-500">★★★★★ <span class="text-gray-400 font-normal">4.9</span></span>
+                  ${assetBadge}
+                </div>
+              </div>
+            </div>
+
+            <p class="text-xs text-gray-600 dark:text-gray-400 line-clamp-2 leading-relaxed">
+              ${game.description}
+            </p>
+
+            <div class="flex items-center justify-between pt-2 border-t border-black/5 dark:border-white/10">
+              <span class="text-[11px] text-gray-400 font-medium">${game.engine}</span>
+              <div class="flex items-center gap-2">
+                <button onclick="event.stopPropagation(); openStorePage('${game.id}')" class="px-3 py-1.5 rounded-full bg-black/5 dark:bg-white/10 hover:bg-black/10 text-xs font-semibold text-[#007AFF] dark:text-[#0A84FF]">
+                  Mağaza Sayfası
+                </button>
+                <button onclick="event.stopPropagation(); launchGame('${game.id}')" class="px-4 py-1.5 rounded-full bg-[#007AFF] hover:bg-[#0066D6] text-white text-xs font-bold">
+                  OYNA
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Open Store Product Page Modal
+    async function openStorePage(gameId) {
+      const game = allGames.find(g => g.id === gameId);
+      if (!game) return;
+
+      activeStoreGame = game;
+      activeStoreTab = 'app-store';
+      updateStoreTabUI();
+
+      const modal = document.getElementById('storeModal');
+      const content = document.getElementById('storeModalContent');
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+
+      content.innerHTML = `<div class="py-16 text-center text-sm text-gray-400">Market assetleri yükleniyor...</div>`;
+
+      try {
+        let res = await fetch(`/api/games/${encodeURIComponent(gameId)}/store-assets`);
+        if (!res.ok) {
+          res = await fetch(`./data/store-assets-${encodeURIComponent(gameId)}.json`);
+        }
+        activeStoreAssets = await res.json();
+
+        // Pick first available iOS device tab
+        if (activeStoreAssets.appStore.iphone67.length) activeDeviceTab = 'iphone67';
+        else if (activeStoreAssets.appStore.iphone65.length) activeDeviceTab = 'iphone65';
+        else if (activeStoreAssets.appStore.ipad.length) activeDeviceTab = 'ipad';
+        else activeDeviceTab = 'iphone67';
+
+        renderStoreModalContent();
+      } catch (err) {
+        content.innerHTML = `<div class="py-12 text-center text-red-500 text-sm">Assetler yüklenirken hata oluştu.</div>`;
+      }
+    }
+
+    function updateStoreTabUI() {
+      document.querySelectorAll('.store-tab-btn').forEach(btn => {
+        const isActive = btn.dataset.storeTab === activeStoreTab;
+        btn.className = isActive
+          ? 'store-tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition-all bg-white dark:bg-[#2C2C2E] shadow-sm text-black dark:text-white'
+          : 'store-tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition-all text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white';
+      });
+    }
+
+    // Simple markdown-to-HTML formatter for store-metadata.md
+    function simpleMarkdown(md) {
+      if (!md) return '<p class="text-gray-400">Bu oyun için ASO / store-metadata.md dosyası bulunamadı.</p>';
+      return md
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+        .replace(/^### (.*)$/gm, '<h3>$1</h3>')
+        .replace(/^## (.*)$/gm, '<h2>$1</h2>')
+        .replace(/^# (.*)$/gm, '<h1>$1</h1>')
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/`([^`]+)`/g, '<code>$1</code>')
+        .replace(/^\- (.*)$/gm, '<li>$1</li>')
+        .replace(/(<li>.*<\/li>)/gs, '<ul>$1</ul>')
+        .replace(/\n\n/g, '</p><p>')
+        .replace(/\n/g, '<br>');
+    }
+
+    function renderScreenshotStrip(images, isLandscapeHint = false) {
+      if (!images || images.length === 0) {
+        return `
+          <div class="rounded-2xl border border-dashed border-black/15 dark:border-white/15 p-8 text-center text-sm text-gray-400">
+            Bu kategori için ekran görüntüsü henüz üretilmemiş.
+          </div>
+        `;
+      }
+
+      // Store in window map for lightbox
+      const galleryId = 'gal_' + Math.random().toString(36).slice(2, 8);
+      window[galleryId] = images;
+
+      return `
+        <div class="flex gap-4 overflow-x-auto pb-3 snap-x">
+          ${images.map((img, idx) => {
+            const isLand = img.orientation === 'landscape' || isLandscapeHint;
+            const sizeCls = isLand ? 'h-52 sm:h-64' : 'h-72 sm:h-80';
+            return `
+              <div onclick="openLightbox('${galleryId}', ${idx})" class="snap-start shrink-0 cursor-pointer group relative rounded-2xl overflow-hidden border border-black/10 dark:border-white/15 bg-black shadow-md">
+                <img src="${img.url}" alt="${img.file}" class="${sizeCls} w-auto object-contain group-hover:scale-[1.02] transition-transform duration-300" loading="lazy">
+                <div class="absolute bottom-2 left-2 right-2 flex items-center justify-between gap-2 px-2.5 py-1 rounded-lg bg-black/65 text-white text-[10px] font-mono backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span class="truncate">${img.file}</span>
+                  ${img.width ? `<span class="shrink-0 text-blue-300">${img.width}×${img.height}</span>` : ''}
+                </div>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      `;
+    }
+
+    function renderStoreModalContent() {
+      const game = activeStoreGame;
+      const assets = activeStoreAssets;
+      const content = document.getElementById('storeModalContent');
+      if (!game || !assets) return;
+
+      if (activeStoreTab === 'app-store') {
+        const deviceCounts = {
+          iphone67: assets.appStore.iphone67.length,
+          iphone65: assets.appStore.iphone65.length,
+          ipad: assets.appStore.ipad.length
+        };
+        const currentShots = assets.appStore[activeDeviceTab] || [];
+
+        content.innerHTML = `
+          <!-- iOS APP STORE HEADER -->
+          <div class="flex flex-col sm:flex-row items-start sm:items-center gap-5">
+            ${renderAppIcon(game, 'w-24 h-24 sm:w-28 sm:h-28')}
+            <div class="flex-1 min-w-0">
+              <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">${game.title}</h2>
+              <p class="text-sm sm:text-base text-gray-500 dark:text-gray-400 mt-0.5">${game.genre}</p>
+              <div class="flex items-center gap-3 mt-4">
+                <button onclick="launchGame('${game.id}')" class="px-6 py-2 rounded-full bg-[#007AFF] hover:bg-[#0066D6] text-white text-sm font-bold shadow-sm transition-colors">
+                  OYNA
+                </button>
+                <span class="text-xs text-gray-400">Ücretsiz • Web Önizleme</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- iOS INFO STRIP -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 py-4 border-y border-black/10 dark:border-white/10 text-center">
+            <div>
+              <div class="text-[10px] font-semibold uppercase text-gray-400">Değerlendirme</div>
+              <div class="text-lg font-bold mt-0.5">4.9</div>
+              <div class="text-xs text-amber-500">★★★★★</div>
+            </div>
+            <div>
+              <div class="text-[10px] font-semibold uppercase text-gray-400">Yaş</div>
+              <div class="text-lg font-bold mt-0.5">${game.category === 'cozy' || game.category === 'arcade' ? '4+' : '12+'}</div>
+              <div class="text-xs text-gray-400">Yaş</div>
+            </div>
+            <div>
+              <div class="text-[10px] font-semibold uppercase text-gray-400">Geliştirici</div>
+              <div class="text-sm font-bold mt-1.5">Muscan Game Factory</div>
+              <div class="text-xs text-gray-400">Studio</div>
+            </div>
+            <div>
+              <div class="text-[10px] font-semibold uppercase text-gray-400">Market Asset</div>
+              <div class="text-lg font-bold mt-0.5">${assets.totalImages}</div>
+              <div class="text-xs text-gray-400">Görsel</div>
+            </div>
+          </div>
+
+          <!-- iOS SCREENSHOTS WITH DEVICE SWITCHER -->
+          <div class="space-y-3">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-lg font-bold">Önizleme</h3>
+              <div class="flex items-center gap-1.5 bg-black/5 dark:bg-white/10 p-1 rounded-xl text-xs">
+                <button onclick="setDeviceTab('iphone67')" class="px-3 py-1 rounded-lg font-semibold ${activeDeviceTab === 'iphone67' ? 'bg-white dark:bg-[#2C2C2E] shadow-sm' : 'text-gray-500'}">
+                  iPhone 6.7" (${deviceCounts.iphone67})
+                </button>
+                <button onclick="setDeviceTab('iphone65')" class="px-3 py-1 rounded-lg font-semibold ${activeDeviceTab === 'iphone65' ? 'bg-white dark:bg-[#2C2C2E] shadow-sm' : 'text-gray-500'}">
+                  iPhone 6.5" (${deviceCounts.iphone65})
+                </button>
+                <button onclick="setDeviceTab('ipad')" class="px-3 py-1 rounded-lg font-semibold ${activeDeviceTab === 'ipad' ? 'bg-white dark:bg-[#2C2C2E] shadow-sm' : 'text-gray-500'}">
+                  iPad (${deviceCounts.ipad})
+                </button>
+              </div>
+            </div>
+            ${renderScreenshotStrip(currentShots)}
+          </div>
+
+          <!-- DESCRIPTION -->
+          <div class="space-y-2 pt-2 border-t border-black/10 dark:border-white/10">
+            <h3 class="text-lg font-bold">Açıklama</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">${game.description}</p>
+            <div class="text-xs text-gray-400 pt-2">Kontroller: ${game.controls} • Motor: ${game.engine}</div>
+          </div>
+        `;
+      } else if (activeStoreTab === 'google-play') {
+        const fg = assets.googlePlay.featureGraphic;
+        content.innerHTML = `
+          <!-- GOOGLE PLAY FEATURE GRAPHIC -->
+          ${fg ? `
+            <div onclick="openSingleLightbox('${fg.url}', '${fg.file}', '1024×500')" class="cursor-pointer relative rounded-2xl overflow-hidden border border-black/10 dark:border-white/10 shadow-md">
+              <img src="${fg.url}" alt="Feature Graphic" class="w-full aspect-[1024/500] object-cover">
+              <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg bg-black/65 text-white text-[11px] font-mono">Feature Graphic • 1024×500</span>
+            </div>
+          ` : `
+            <div class="rounded-2xl border border-dashed border-black/15 dark:border-white/15 p-6 text-center text-xs text-gray-400">
+              Google Play Feature Graphic (1024×500) henüz üretilmemiş.
+            </div>
+          `}
+
+          <!-- GOOGLE PLAY HEADER -->
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+              ${assets.googlePlay.icon
+                ? `<img src="${assets.googlePlay.icon.url}" class="w-20 h-20 rounded-2xl object-cover shadow-md border border-black/10" alt="${game.title}">`
+                : renderAppIcon(game, 'w-20 h-20')}
+              <div>
+                <h2 class="text-2xl font-bold">${game.title}</h2>
+                <div class="text-sm font-semibold text-[#01875F]">Muscan Game Factory</div>
+                <div class="text-xs text-gray-500 mt-0.5">${game.genre} • Reklam içermez</div>
+              </div>
+            </div>
+            <button onclick="launchGame('${game.id}')" class="w-full sm:w-auto px-8 py-2.5 rounded-lg bg-[#01875F] hover:bg-[#016e4d] text-white text-sm font-semibold shadow-sm transition-colors">
+              Oyna
+            </button>
+          </div>
+
+          <!-- GOOGLE PLAY LANDSCAPE SCREENSHOTS -->
+          <div class="space-y-2">
+            <h3 class="text-base font-bold">Yatay Ekran Görüntüleri (${assets.googlePlay.landscape.length})</h3>
+            ${renderScreenshotStrip(assets.googlePlay.landscape, true)}
+          </div>
+
+          ${assets.googlePlay.portrait.length ? `
+            <div class="space-y-2">
+              <h3 class="text-base font-bold">Dikey Ekran Görüntüleri (${assets.googlePlay.portrait.length})</h3>
+              ${renderScreenshotStrip(assets.googlePlay.portrait, false)}
+            </div>
+          ` : ''}
+        `;
+      } else if (activeStoreTab === 'raw') {
+        content.innerHTML = `
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-bold">Ham Gameplay Görüntüleri (${assets.rawGameplay.length})</h3>
+              <span class="text-xs text-gray-400">raw-gameplay/</span>
+            </div>
+            ${assets.rawGameplay.length ? `
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                ${assets.rawGameplay.map((img, idx) => {
+                  window.__rawGal = assets.rawGameplay;
+                  return `
+                    <div onclick="openLightbox('__rawGal', ${idx})" class="cursor-pointer group rounded-2xl overflow-hidden border border-black/10 dark:border-white/10 bg-black">
+                      <img src="${img.url}" alt="${img.file}" class="w-full h-48 object-cover group-hover:scale-[1.03] transition-transform" loading="lazy">
+                      <div class="p-2.5 bg-white dark:bg-[#2C2C2E] flex items-center justify-between text-xs font-mono">
+                        <span class="truncate">${img.file}</span>
+                        ${img.width ? `<span class="text-gray-400 shrink-0 ml-2">${img.width}×${img.height}</span>` : ''}
+                      </div>
+                    </div>
+                  `;
+                }).join('')}
+              </div>
+            ` : `
+              <div class="rounded-2xl border border-dashed border-black/15 dark:border-white/15 p-10 text-center text-sm text-gray-400">
+                Bu oyun için raw-gameplay görseli bulunamadı.
+              </div>
+            `}
+          </div>
+        `;
+      } else if (activeStoreTab === 'aso') {
+        content.innerHTML = `
+          <div class="space-y-6">
+            ${assets.privacyPolicyUrl ? `
+              <div class="flex items-center justify-between p-3.5 rounded-xl bg-blue-500/10 border border-blue-500/20">
+                <span class="text-xs font-semibold text-[#007AFF]">🔒 Gizlilik Politikası (privacy-policy.html) mevcut</span>
+                <a href="${assets.privacyPolicyUrl}" target="_blank" class="px-3 py-1 rounded-lg bg-[#007AFF] text-white text-xs font-semibold">Yeni Sekmede Aç</a>
+              </div>
+            ` : ''}
+            <div class="markdown-body text-sm text-gray-700 dark:text-gray-300">
+              ${simpleMarkdown(assets.metadataMarkdown)}
+            </div>
+            ${assets.checklistMarkdown ? `
+              <div class="pt-4 border-t border-black/10 dark:border-white/10 markdown-body text-sm text-gray-700 dark:text-gray-300">
+                ${simpleMarkdown(assets.checklistMarkdown)}
+              </div>
+            ` : ''}
+          </div>
+        `;
+      }
+    }
+
+    function setDeviceTab(tab) {
+      activeDeviceTab = tab;
+      renderStoreModalContent();
+    }
+
+    // Store tab switching
+    document.querySelectorAll('.store-tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        activeStoreTab = btn.dataset.storeTab;
+        updateStoreTabUI();
+        renderStoreModalContent();
+      });
+    });
+
+    // Close Store Modal
+    function closeStoreModal() {
+      document.getElementById('storeModal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+    document.getElementById('closeStoreModal').addEventListener('click', closeStoreModal);
+    document.getElementById('storeModal').addEventListener('click', (e) => {
+      if (e.target.id === 'storeModal') closeStoreModal();
+    });
+
+    // Lightbox logic
+    function openLightbox(galleryKey, index) {
+      lightboxImages = window[galleryKey] || [];
+      lightboxIndex = index;
+      updateLightbox();
+      document.getElementById('lightbox').classList.remove('hidden');
+    }
+    function openSingleLightbox(url, file, dims) {
+      lightboxImages = [{ url, file, dims }];
+      lightboxIndex = 0;
+      updateLightbox();
+      document.getElementById('lightbox').classList.remove('hidden');
+    }
+    function updateLightbox() {
+      const img = lightboxImages[lightboxIndex];
+      if (!img) return;
+      document.getElementById('lightboxImg').src = img.url;
+      document.getElementById('lightboxTitle').textContent = img.file || '';
+      document.getElementById('lightboxDims').textContent = img.width ? `${img.width}×${img.height}` : (img.dims || '');
+      document.getElementById('lightboxCounter').textContent = `${lightboxIndex + 1} / ${lightboxImages.length}`;
+    }
+    document.getElementById('closeLightbox').addEventListener('click', () => {
+      document.getElementById('lightbox').classList.add('hidden');
+    });
+    document.getElementById('lightboxPrev').addEventListener('click', () => {
+      if (!lightboxImages.length) return;
+      lightboxIndex = (lightboxIndex - 1 + lightboxImages.length) % lightboxImages.length;
+      updateLightbox();
+    });
+    document.getElementById('lightboxNext').addEventListener('click', () => {
+      if (!lightboxImages.length) return;
+      lightboxIndex = (lightboxIndex + 1) % lightboxImages.length;
+      updateLightbox();
+    });
+    document.addEventListener('keydown', (e) => {
+      const lb = document.getElementById('lightbox');
+      if (!lb.classList.contains('hidden')) {
+        if (e.key === 'Escape') lb.classList.add('hidden');
+        if (e.key === 'ArrowLeft') document.getElementById('lightboxPrev').click();
+        if (e.key === 'ArrowRight') document.getElementById('lightboxNext').click();
+      } else if (e.key === 'Escape' && !document.getElementById('storeModal').classList.contains('hidden')) {
+        closeStoreModal();
+      }
+    });
+
+    // Filter & Search
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        currentCategory = btn.dataset.cat;
+        document.querySelectorAll('.filter-btn').forEach(b => {
+          b.className = b.dataset.cat === currentCategory
+            ? 'filter-btn shrink-0 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-[#007AFF] text-white transition-all'
+            : 'filter-btn shrink-0 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-white dark:bg-[#1C1C1E] text-gray-700 dark:text-gray-300 border border-black/5 dark:border-white/10 hover:bg-black/5 transition-all';
+        });
+        renderGrid();
+      });
+    });
+
+    function onSearch(val) {
+      searchQuery = val;
+      renderGrid();
+    }
+    document.getElementById('searchInput').addEventListener('input', (e) => onSearch(e.target.value));
+    document.getElementById('searchInputMobile').addEventListener('input', (e) => onSearch(e.target.value));
+
+    function resetFilters() {
+      currentCategory = 'all';
+      searchQuery = '';
+      document.getElementById('searchInput').value = '';
+      document.getElementById('searchInputMobile').value = '';
+      document.querySelector('[data-cat="all"]').click();
+    }
+
+    // Playable Game Launcher
+    const gameView = document.getElementById('gameView');
+    const gameIframe = document.getElementById('gameIframe');
+    const iframeWrapper = document.getElementById('iframeWrapper');
+
+    function launchGame(gameId) {
+      const game = allGames.find(g => g.id === gameId);
+      if (!game) return;
+      closeStoreModal();
+
+      document.getElementById('activeGameTitle').textContent = game.title;
+      document.getElementById('activeGameBadge').textContent = game.badge || '';
+
+      const isPortrait = game.aspectRatio === '9/16';
+      iframeWrapper.classList.toggle('portrait', isPortrait);
+      document.getElementById('aspectIcon').textContent = isPortrait ? '📱' : '🖥️';
+      document.getElementById('aspectLabel').textContent = isPortrait ? 'Mobil Boyut' : 'Tam Genişlik';
+
+      gameIframe.src = game.playUrl || `/games/${game.id}/index.html`;
+      gameView.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    document.getElementById('closeGameBtn').addEventListener('click', () => {
+      gameIframe.src = 'about:blank';
+      gameView.classList.add('hidden');
+      document.body.style.overflow = '';
+    });
+
+    document.getElementById('aspectRatioToggle').addEventListener('click', () => {
+      const isPortrait = iframeWrapper.classList.toggle('portrait');
+      document.getElementById('aspectIcon').textContent = isPortrait ? '📱' : '🖥️';
+      document.getElementById('aspectLabel').textContent = isPortrait ? 'Mobil Boyut' : 'Tam Genişlik';
+    });
+
+    document.getElementById('reloadGameBtn').addEventListener('click', () => {
+      if (gameIframe.src && gameIframe.src !== 'about:blank') {
+        gameIframe.src = gameIframe.src;
+      }
+    });
+
+    document.getElementById('fullscreenBtn').addEventListener('click', () => {
+      if (gameIframe.requestFullscreen) gameIframe.requestFullscreen();
+    });
+
+    loadGames();
+  </script>
+</body>
+</html>

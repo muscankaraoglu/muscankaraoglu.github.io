@@ -1,0 +1,521 @@
+{
+  "hasAssets": true,
+  "appStore": {
+    "icon": {
+      "file": "icon-1024x1024.png",
+      "url": "./store-assets/minik-dunya/app-store/icon-1024x1024.png",
+      "width": 1024,
+      "height": 1024,
+      "orientation": "landscape"
+    },
+    "iphone67": [
+      {
+        "file": "iphone-6.7-landscape-01-2796x1290.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.7-landscape-01-2796x1290.png",
+        "width": 2796,
+        "height": 1290,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.7-landscape-02-2796x1290.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.7-landscape-02-2796x1290.png",
+        "width": 2796,
+        "height": 1290,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.7-landscape-03-2796x1290.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.7-landscape-03-2796x1290.png",
+        "width": 2796,
+        "height": 1290,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.7-landscape-04-2796x1290.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.7-landscape-04-2796x1290.png",
+        "width": 2796,
+        "height": 1290,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.7-landscape-05-2796x1290.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.7-landscape-05-2796x1290.png",
+        "width": 2796,
+        "height": 1290,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.7-landscape-06-2796x1290.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.7-landscape-06-2796x1290.png",
+        "width": 2796,
+        "height": 1290,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.7-landscape-07-2796x1290.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.7-landscape-07-2796x1290.png",
+        "width": 2796,
+        "height": 1290,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.7-landscape-08-2796x1290.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.7-landscape-08-2796x1290.png",
+        "width": 2796,
+        "height": 1290,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.7-screenshot-01-1290x2796.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.7-screenshot-01-1290x2796.png",
+        "width": 1290,
+        "height": 2796,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.7-screenshot-02-1290x2796.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.7-screenshot-02-1290x2796.png",
+        "width": 1290,
+        "height": 2796,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.7-screenshot-03-1290x2796.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.7-screenshot-03-1290x2796.png",
+        "width": 1290,
+        "height": 2796,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.7-screenshot-04-1290x2796.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.7-screenshot-04-1290x2796.png",
+        "width": 1290,
+        "height": 2796,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.7-screenshot-05-1290x2796.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.7-screenshot-05-1290x2796.png",
+        "width": 1290,
+        "height": 2796,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.7-screenshot-06-1290x2796.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.7-screenshot-06-1290x2796.png",
+        "width": 1290,
+        "height": 2796,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.7-screenshot-07-1290x2796.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.7-screenshot-07-1290x2796.png",
+        "width": 1290,
+        "height": 2796,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.7-screenshot-08-1290x2796.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.7-screenshot-08-1290x2796.png",
+        "width": 1290,
+        "height": 2796,
+        "orientation": "portrait"
+      }
+    ],
+    "iphone65": [
+      {
+        "file": "iphone-6.5-landscape-01-2688x1242.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.5-landscape-01-2688x1242.png",
+        "width": 2688,
+        "height": 1242,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.5-landscape-02-2688x1242.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.5-landscape-02-2688x1242.png",
+        "width": 2688,
+        "height": 1242,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.5-landscape-03-2688x1242.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.5-landscape-03-2688x1242.png",
+        "width": 2688,
+        "height": 1242,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.5-landscape-04-2688x1242.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.5-landscape-04-2688x1242.png",
+        "width": 2688,
+        "height": 1242,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.5-landscape-05-2688x1242.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.5-landscape-05-2688x1242.png",
+        "width": 2688,
+        "height": 1242,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.5-landscape-06-2688x1242.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.5-landscape-06-2688x1242.png",
+        "width": 2688,
+        "height": 1242,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.5-landscape-07-2688x1242.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.5-landscape-07-2688x1242.png",
+        "width": 2688,
+        "height": 1242,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.5-landscape-08-2688x1242.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.5-landscape-08-2688x1242.png",
+        "width": 2688,
+        "height": 1242,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.5-screenshot-01-1242x2688.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.5-screenshot-01-1242x2688.png",
+        "width": 1242,
+        "height": 2688,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.5-screenshot-02-1242x2688.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.5-screenshot-02-1242x2688.png",
+        "width": 1242,
+        "height": 2688,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.5-screenshot-03-1242x2688.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.5-screenshot-03-1242x2688.png",
+        "width": 1242,
+        "height": 2688,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.5-screenshot-04-1242x2688.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.5-screenshot-04-1242x2688.png",
+        "width": 1242,
+        "height": 2688,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.5-screenshot-05-1242x2688.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.5-screenshot-05-1242x2688.png",
+        "width": 1242,
+        "height": 2688,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.5-screenshot-06-1242x2688.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.5-screenshot-06-1242x2688.png",
+        "width": 1242,
+        "height": 2688,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.5-screenshot-07-1242x2688.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.5-screenshot-07-1242x2688.png",
+        "width": 1242,
+        "height": 2688,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.5-screenshot-08-1242x2688.png",
+        "url": "./store-assets/minik-dunya/app-store/iphone-6.5-screenshot-08-1242x2688.png",
+        "width": 1242,
+        "height": 2688,
+        "orientation": "portrait"
+      }
+    ],
+    "ipad": [
+      {
+        "file": "ipad-12.9-landscape-01-2732x2048.png",
+        "url": "./store-assets/minik-dunya/app-store/ipad-12.9-landscape-01-2732x2048.png",
+        "width": 2732,
+        "height": 2048,
+        "orientation": "landscape"
+      },
+      {
+        "file": "ipad-12.9-landscape-02-2732x2048.png",
+        "url": "./store-assets/minik-dunya/app-store/ipad-12.9-landscape-02-2732x2048.png",
+        "width": 2732,
+        "height": 2048,
+        "orientation": "landscape"
+      },
+      {
+        "file": "ipad-12.9-landscape-03-2732x2048.png",
+        "url": "./store-assets/minik-dunya/app-store/ipad-12.9-landscape-03-2732x2048.png",
+        "width": 2732,
+        "height": 2048,
+        "orientation": "landscape"
+      },
+      {
+        "file": "ipad-12.9-landscape-04-2732x2048.png",
+        "url": "./store-assets/minik-dunya/app-store/ipad-12.9-landscape-04-2732x2048.png",
+        "width": 2732,
+        "height": 2048,
+        "orientation": "landscape"
+      },
+      {
+        "file": "ipad-12.9-landscape-05-2732x2048.png",
+        "url": "./store-assets/minik-dunya/app-store/ipad-12.9-landscape-05-2732x2048.png",
+        "width": 2732,
+        "height": 2048,
+        "orientation": "landscape"
+      },
+      {
+        "file": "ipad-12.9-landscape-06-2732x2048.png",
+        "url": "./store-assets/minik-dunya/app-store/ipad-12.9-landscape-06-2732x2048.png",
+        "width": 2732,
+        "height": 2048,
+        "orientation": "landscape"
+      },
+      {
+        "file": "ipad-12.9-landscape-07-2732x2048.png",
+        "url": "./store-assets/minik-dunya/app-store/ipad-12.9-landscape-07-2732x2048.png",
+        "width": 2732,
+        "height": 2048,
+        "orientation": "landscape"
+      },
+      {
+        "file": "ipad-12.9-landscape-08-2732x2048.png",
+        "url": "./store-assets/minik-dunya/app-store/ipad-12.9-landscape-08-2732x2048.png",
+        "width": 2732,
+        "height": 2048,
+        "orientation": "landscape"
+      }
+    ],
+    "other": []
+  },
+  "googlePlay": {
+    "icon": {
+      "file": "icon-512x512.png",
+      "url": "./store-assets/minik-dunya/google-play/icon-512x512.png",
+      "width": 512,
+      "height": 512,
+      "orientation": "landscape"
+    },
+    "featureGraphic": {
+      "file": "feature-graphic-1024x500.png",
+      "url": "./store-assets/minik-dunya/google-play/feature-graphic-1024x500.png",
+      "width": 1024,
+      "height": 500,
+      "orientation": "landscape"
+    },
+    "landscape": [
+      {
+        "file": "screenshot-01-1920x1080.png",
+        "url": "./store-assets/minik-dunya/google-play/screenshot-01-1920x1080.png",
+        "width": 1920,
+        "height": 1080,
+        "orientation": "landscape"
+      },
+      {
+        "file": "screenshot-02-1920x1080.png",
+        "url": "./store-assets/minik-dunya/google-play/screenshot-02-1920x1080.png",
+        "width": 1920,
+        "height": 1080,
+        "orientation": "landscape"
+      },
+      {
+        "file": "screenshot-03-1920x1080.png",
+        "url": "./store-assets/minik-dunya/google-play/screenshot-03-1920x1080.png",
+        "width": 1920,
+        "height": 1080,
+        "orientation": "landscape"
+      },
+      {
+        "file": "screenshot-04-1920x1080.png",
+        "url": "./store-assets/minik-dunya/google-play/screenshot-04-1920x1080.png",
+        "width": 1920,
+        "height": 1080,
+        "orientation": "landscape"
+      },
+      {
+        "file": "screenshot-05-1920x1080.png",
+        "url": "./store-assets/minik-dunya/google-play/screenshot-05-1920x1080.png",
+        "width": 1920,
+        "height": 1080,
+        "orientation": "landscape"
+      },
+      {
+        "file": "screenshot-06-1920x1080.png",
+        "url": "./store-assets/minik-dunya/google-play/screenshot-06-1920x1080.png",
+        "width": 1920,
+        "height": 1080,
+        "orientation": "landscape"
+      },
+      {
+        "file": "screenshot-07-1920x1080.png",
+        "url": "./store-assets/minik-dunya/google-play/screenshot-07-1920x1080.png",
+        "width": 1920,
+        "height": 1080,
+        "orientation": "landscape"
+      },
+      {
+        "file": "screenshot-08-1920x1080.png",
+        "url": "./store-assets/minik-dunya/google-play/screenshot-08-1920x1080.png",
+        "width": 1920,
+        "height": 1080,
+        "orientation": "landscape"
+      }
+    ],
+    "portrait": [
+      {
+        "file": "screenshot-portrait-01-1080x1920.png",
+        "url": "./store-assets/minik-dunya/google-play/screenshot-portrait-01-1080x1920.png",
+        "width": 1080,
+        "height": 1920,
+        "orientation": "portrait"
+      },
+      {
+        "file": "screenshot-portrait-02-1080x1920.png",
+        "url": "./store-assets/minik-dunya/google-play/screenshot-portrait-02-1080x1920.png",
+        "width": 1080,
+        "height": 1920,
+        "orientation": "portrait"
+      },
+      {
+        "file": "screenshot-portrait-03-1080x1920.png",
+        "url": "./store-assets/minik-dunya/google-play/screenshot-portrait-03-1080x1920.png",
+        "width": 1080,
+        "height": 1920,
+        "orientation": "portrait"
+      },
+      {
+        "file": "screenshot-portrait-04-1080x1920.png",
+        "url": "./store-assets/minik-dunya/google-play/screenshot-portrait-04-1080x1920.png",
+        "width": 1080,
+        "height": 1920,
+        "orientation": "portrait"
+      },
+      {
+        "file": "screenshot-portrait-05-1080x1920.png",
+        "url": "./store-assets/minik-dunya/google-play/screenshot-portrait-05-1080x1920.png",
+        "width": 1080,
+        "height": 1920,
+        "orientation": "portrait"
+      },
+      {
+        "file": "screenshot-portrait-06-1080x1920.png",
+        "url": "./store-assets/minik-dunya/google-play/screenshot-portrait-06-1080x1920.png",
+        "width": 1080,
+        "height": 1920,
+        "orientation": "portrait"
+      },
+      {
+        "file": "screenshot-portrait-07-1080x1920.png",
+        "url": "./store-assets/minik-dunya/google-play/screenshot-portrait-07-1080x1920.png",
+        "width": 1080,
+        "height": 1920,
+        "orientation": "portrait"
+      },
+      {
+        "file": "screenshot-portrait-08-1080x1920.png",
+        "url": "./store-assets/minik-dunya/google-play/screenshot-portrait-08-1080x1920.png",
+        "width": 1080,
+        "height": 1920,
+        "orientation": "portrait"
+      }
+    ]
+  },
+  "rawGameplay": [
+    {
+      "file": "01_home_hub-2560x1440.png",
+      "url": "./store-assets/minik-dunya/raw-gameplay/01_home_hub-2560x1440.png",
+      "width": 2560,
+      "height": 1440,
+      "orientation": "landscape"
+    },
+    {
+      "file": "02_balloon_garden-2560x1440.png",
+      "url": "./store-assets/minik-dunya/raw-gameplay/02_balloon_garden-2560x1440.png",
+      "width": 2560,
+      "height": 1440,
+      "orientation": "landscape"
+    },
+    {
+      "file": "03_wooden_blocks-2560x1440.png",
+      "url": "./store-assets/minik-dunya/raw-gameplay/03_wooden_blocks-2560x1440.png",
+      "width": 2560,
+      "height": 1440,
+      "orientation": "landscape"
+    },
+    {
+      "file": "04_magnetic_shapes-2560x1440.png",
+      "url": "./store-assets/minik-dunya/raw-gameplay/04_magnetic_shapes-2560x1440.png",
+      "width": 2560,
+      "height": 1440,
+      "orientation": "landscape"
+    },
+    {
+      "file": "05_real_piano-2560x1440.png",
+      "url": "./store-assets/minik-dunya/raw-gameplay/05_real_piano-2560x1440.png",
+      "width": 2560,
+      "height": 1440,
+      "orientation": "landscape"
+    },
+    {
+      "file": "06_alphabet_explorer-2560x1440.png",
+      "url": "./store-assets/minik-dunya/raw-gameplay/06_alphabet_explorer-2560x1440.png",
+      "width": 2560,
+      "height": 1440,
+      "orientation": "landscape"
+    },
+    {
+      "file": "07_coloring_book-2560x1440.png",
+      "url": "./store-assets/minik-dunya/raw-gameplay/07_coloring_book-2560x1440.png",
+      "width": 2560,
+      "height": 1440,
+      "orientation": "landscape"
+    },
+    {
+      "file": "08_animal_finder-2560x1440.png",
+      "url": "./store-assets/minik-dunya/raw-gameplay/08_animal_finder-2560x1440.png",
+      "width": 2560,
+      "height": 1440,
+      "orientation": "landscape"
+    },
+    {
+      "file": "09_pattern_train-2560x1440.png",
+      "url": "./store-assets/minik-dunya/raw-gameplay/09_pattern_train-2560x1440.png",
+      "width": 2560,
+      "height": 1440,
+      "orientation": "landscape"
+    },
+    {
+      "file": "10_shape_sorter-2560x1440.png",
+      "url": "./store-assets/minik-dunya/raw-gameplay/10_shape_sorter-2560x1440.png",
+      "width": 2560,
+      "height": 1440,
+      "orientation": "landscape"
+    },
+    {
+      "file": "11_parent_panel-2560x1440.png",
+      "url": "./store-assets/minik-dunya/raw-gameplay/11_parent_panel-2560x1440.png",
+      "width": 2560,
+      "height": 1440,
+      "orientation": "landscape"
+    },
+    {
+      "file": "12_toy_phone_portrait-1440x2560.png",
+      "url": "./store-assets/minik-dunya/raw-gameplay/12_toy_phone_portrait-1440x2560.png",
+      "width": 1440,
+      "height": 2560,
+      "orientation": "portrait"
+    }
+  ],
+  "metadataMarkdown": "# 🌱 Minik Dünya — Google Play & App Store Metadata (TR + EN)\n\n---\n\n## 🇹🇷 TÜRKÇE MAĞAZA METİNLERİ (Google Play & App Store)\n\n* **Uygulama Adı (Max 30 karakter):** `Minik Dünya: Eğitici Oyunlar`\n* **App Store Alt Başlık (Max 30 karakter):** `1-4 Yaş Reklamsız Montessori`\n* **Google Play Kısa Açıklama (Max 80 karakter):** `1-4 yaş için %100 reklamsız, Türkçe sesli, ebeveyn kontrollü 17 eğitici oyun!`\n* **App Store Anahtar Kelimeler (Max 100 karakter):** `bebek,çocuk,oyun,eğitici,montessori,reklamsız,türkçe,hayvanlar,alfabe,piyano,boyama,bloklar,1,2,3,4`\n\n### Tam Açıklama (TR)\n```text\nMİNİK DÜNYA: 12-48 Ay Çocuklar İçin Sakin, Güvenli ve %100 Reklamsız Oyun Bahçesi!\n\nAşırı uyarıcı animasyonlardan, ani gürültülerden ve çocuklara uygun olmayan reklamlardan uzak; pedagojik ve Montessori ilkelerine göre tasarlanmış sıcak bir keşif dünyası. Minik Dünya, 1 ile 4 yaş arası bebek ve okul öncesi çocukların ince motor, dil, müzik, mantık ve uzamsal düşünme becerilerini destekleyen 17 seçkin mini oyunu tek bir güvenli çatı altında sunar.\n\n🌿 NEDEN MİNİK DÜNYA?\n• %100 Reklamsız ve Güvenli: Uygulama içinde hiçbir reklam ağı, açılır pencere veya harici bağlantı yer almaz.\n• Doğal Türkçe Seslendirme: Tüm renkler, harfler, sayılar, hayvanlar, taşıtlar ve teşvik cümleleri sıcak ve anlaşılır Türkçe seslendirmelerle sunulur.\n• Sakinleştirici Montessori Estetiği: Göz yormayan sıcak krem ve pastel renk paleti, yumuşak geçişler ve cezalandırma/kaybetme stresi içermeyen pozitif geri bildirimler.\n\n🎮 17 EĞİTİCİ MİNİ OYUN (7 ÜCRETSİZ + 10 PREMİUM DENEMELİ):\n\nÜCRETSİZ TEMEL OYUN PAKETİ (7 Oyun):\n1. Balon Bahçesi: Gökyüzünde süzülen pastel balonları patlatarak renkleri ve sürpriz yıldızları Türkçe seslerle öğren.\n2. Hayvanları Bul: Kedi, köpek, inek, koyun, ördek, tavuk, kuş ve kurbağayı gerçekçi sesleri ve Türkçe isimleriyle keşfet.\n3. Neşeli Telefon: Anne, Baba, Dede, Nine, Minik Kedi ve Sevimli Köpek ile sevgi dolu sesli telefon konuşmaları yap.\n4. Müzik Ksilofonu: Ahşap ksilofon tuşlarıyla serbest müzik yap veya \"Daha Dün Annemizin\" ve \"Ali Babanın Çiftliği\" şarkılarını çal.\n5. Şekil Yuvası: Daire, kare, üçgen, yıldız, kalp ve ay şekillerini ahşap yuvalarına yerleştir.\n6. Taşıtları Keşfet: Araba, tren, uçak, gemi, otobüs ve itfaiye araçlarının seslerini tanı.\n7. Neşeli Alfabe (29 Harf): A'dan Z'ye tüm Türk alfabesi harflerini, sevimli hayvan, meyve ve nesne çizimleriyle sesli olarak öğren.\n\nPREMİUM OYUNLAR (Her Oyun İçin 1 Dakika Ücretsiz Deneme + Tek Seferlik Açma):\n8. 3D Ahşap Bloklar: Kayın, akçaağaç, ceviz ve pastel boyalı 3D ahşap bloklarla köprü, kule ve saraylar inşa et; gerçekçi fizik motoruyla devir!\n9. 3D Manyetik Şekiller: Işıltılı yarı saydam mıknatıslı geometrik parçaları kenarlarından birleştirerek 3 boyutlu şatolar, roketler ve kristaller kur.\n10. Gerçek Akustik Piyano: 8 beyaz ve 5 siyah abanoz tuşlu gerçek piyano, 3 oktav seçeneği, sustain pedalı ve rehberli çocuk şarkıları.\n11. Boyama Kitabı: 10 pastel boya kalemi, dokun-doldur boya kovası ve serbest fırça ile Ev, Kelebek, Roket, Tren, Balık ve Çiçek sayfalarını boya.\n12. Sayı Yerleştirmece: 1'den 9'a sayıları ahşap Montessori tablasındaki yuvalarına eşleştir.\n13. Sayı Çizmece: 0-9 arası rakamları adım adım rehberli noktaları takip ederek parmağınla çiz.\n14. Çizgi İzleme: Kalem tutma öncesi ince motor gelişimi için dalgalı, zikzak ve kıvrımlı yolları takip et.\n15. Hafıza Kartları: 4, 6 ve 8 kartlık zorluk seviyelerinde sevimli hayvan ve taşıt eşlerini bul.\n16. Renk Sepeti: Çilek, balina, güneş, yaprak ve havuçları doğru renkteki sepetlere ayır.\n17. Örüntü Treni: Çuf çuf trenin vagonlarındaki şekil dizilimini (ABAB, AABB, ABC) tamamla.\n\n🛡️ GELİŞMİŞ EBEVEYN KONTROL PANELİ:\n• Çocuk Kilidi (Sıralı Kaydırma Doğrulaması): 1-4 yaş çocuğun yanlışlıkla oyundan çıkmasını veya ayarlara girmesini önleyen akıllı ekran kilidi.\n• Günlük ve Oyun Bazlı Süre Sınırı: Süre dolduğunda alarm çalmadan \"Uyuyan Ay\" ninni ekranıyla çocuğu nazikçe dinlenmeye yönlendirir.\n• 7 Günlük Oynama İstatistiği: Çocuğunuzun hangi oyunu ne kadar süre oynadığını grafiklerle takip edin, istediğiniz oyunu ana ekrandan gizleyin.\n• Abonelik Yok: Ücretli oyunları ister tek tek ister \"Tüm Premium Oyunlar Paketi\" ile tek seferlik satın alarak ömür boyu reklamsız kullanın.\n```\n\n---\n\n## 🇺🇸 ENGLISH STORE METADATA (Google Play & App Store)\n\n* **App Name (Max 30 chars):** `Minik Dünya: Toddler Games`\n* **App Store Subtitle (Max 30 chars):** `Calm Ad-Free Montessori 1-4Y`\n* **Google Play Short Description (Max 80 chars):** `17 calm, 100% ad-free Montessori educational mini-games for toddlers ages 1-4!`\n* **App Store Keywords (Max 100 chars):** `toddler,baby,preschool,montessori,educational,calm,adfree,wooden,blocks,piano,alphabet,coloring,kids`\n\n### Full Description (EN)\n```text\nMINIK DUNYA: A Calm, Safe, and 100% Ad-Free Montessori Play Garden for Toddlers (12–48 Months)!\n\nDesigned carefully without overstimulating flashes, harsh buzzers, or third-party advertisements. Minik Dünya brings together 17 tactile, Montessori-inspired educational mini-games that nurture fine motor skills, early vocabulary, musicality, logic, and spatial building for babies and toddlers ages 1 to 4.\n\n🌿 KEY HIGHLIGHTS:\n• 100% Ad-Free & Kid-Safe: Zero third-party ads, pop-ups, or external links.\n• 17 Educational Mini-Games:\n  - 7 Free Core Games: Balloon Garden, Animal Finder, Toy Phone, Musical Xylophone, Wooden Shape Sorter, Vehicle Explorer, and 29-Letter Turkish Alphabet Explorer.\n  - 10 Premium Games (with 1-Minute Free Trial per game): 3D Wooden Block Architect, 3D Magnetic Geometric Tiles, Acoustic Grand Piano, Storybook Coloring Book, Number Puzzle, Number Tracing, Pre-Writing Line Tracing, Memory Cards, Color Sorter Baskets, and Pattern Train.\n• Built-In Parental Dashboard & Screen Lock:\n  - Multi-turn Swipe Parental Gate prevents accidental exits or purchases.\n  - Daily & per-game screen time limits with a gentle \"Sleepy Moon\" lullaby rest screen.\n  - 7-day play history charts and per-game visibility toggles.\n• No Subscriptions: One-time lifetime unlock per mini-game or via the All-in-One Premium Pack.\n```\n\n---\n\n## 💎 In-App Purchase (IAP) SKU Tablosu (Google Play Billing & App Store Connect)\n\nTüm ürünler **Non-Consumable (Kalıcı / Tek Seferlik Açılan İçerik)** tipindedir ve `src/services/entitlements.js` ile birebir eşleşir:\n\n| SKU / Product ID | Tip | Başlık (TR) | Başlık (EN) | Fiyat (TR / USD) |\n| :--- | :--- | :--- | :--- | :--- |\n| `com.minikdunya.pack.premium_all` | Non-Consumable | Tüm Premium Oyunlar Paketi (10 Oyun) | All Premium Games Pack (10 Games) | ₺149,99 / $4.99 |\n| `com.minikdunya.game.real_piano` | Non-Consumable | Gerçek Piyano | Real Acoustic Piano | ₺39,99 / $1.49 |\n| `com.minikdunya.game.wooden_blocks` | Non-Consumable | 3D Ahşap Bloklar | 3D Wooden Blocks | ₺39,99 / $1.49 |\n| `com.minikdunya.game.magnetic_shapes` | Non-Consumable | 3D Manyetik Şekiller | 3D Magnetic Shapes | ₺39,99 / $1.49 |\n| `com.minikdunya.game.coloring_book` | Non-Consumable | Boyama Kitabı | Storybook Coloring Book | ₺39,99 / $1.49 |\n| `com.minikdunya.game.number_puzzle` | Non-Consumable | Sayı Yerleştirmece | Wooden Number Puzzle | ₺29,99 / $0.99 |\n| `com.minikdunya.game.number_tracing` | Non-Consumable | Sayı Çizmece | Guided Number Tracing | ₺29,99 / $0.99 |\n| `com.minikdunya.game.line_tracing` | Non-Consumable | Çizgi İzleme | Pre-Writing Line Tracing | ₺29,99 / $0.99 |\n| `com.minikdunya.game.memory_cards` | Non-Consumable | Hafıza Kartları | Cute Memory Cards | ₺29,99 / $0.99 |\n| `com.minikdunya.game.color_sorter` | Non-Consumable | Renk Sepeti | Color Sorter Baskets | ₺29,99 / $0.99 |\n| `com.minikdunya.game.pattern_train` | Non-Consumable | Örüntü Treni | Logic Pattern Train | ₺29,99 / $0.99 |\n\n---\n\n## 🛡️ Google Play Families Policy & Apple Kids Category Beyanı\n\n* **Reklam Durumu:** **%100 Reklamsız (No Ads)**. Uygulama içinde Google AdMob veya herhangi bir üçüncü taraf reklam/analitik SDK'sı **bulunmaz**.\n* **Google Play Data Safety / Apple Privacy Nutrition Label:**\n  - **Veri Toplama:** **Hayır (No Data Collected)** — Uygulama hiçbir kişisel veriyi, cihaz reklam kimliğini (IDFA/GAID), konumu, kamera/mikrofonu veya kullanım telemetrisini uzak sunuculara göndermez.\n  - **Yerel Kayıt:** Oynama süreleri ve ebeveyn ayarları yalnızca cihaz üzerindeki `localStorage` alanında çevrimdışı saklanır ve Ebeveyn Paneli'nden tek tuşla silinebilir.\n* **Ebeveyn Doğrulama Kapısı (Parental Gate):** Satın alma ekranları ve Ebeveyn Paneli, 12-48 ay çocukların kazara geçemeyeceği çok dönüşlü sıralı kaydırma doğrulaması (`ParentSwipeGate`) arkasında korunmaktadır (Apple Kids Category Guideline 1.3 ve Google Play Families Policy tam uyumlu).\n* **Yaş Grubu:** Apple Kids Category **Ages 5 & Under (5 Yaş ve Altı)** / Google Play **Designed for Families (Aileler İçin Tasarlandı — 5 Yaş ve Altı, PEGI 3 / ESRB Everyone)**.\n",
+  "checklistMarkdown": "# 🚀 MİNİK DÜNYA — GOOGLE PLAY & APP STORE YAYINLAMA REHBERİ\n\nBu rehber, **Minik Dünya** (12-48 Ay Çocuklar İçin %100 Reklamsız Montessori Mini Oyunlar) uygulamasını Android (**Google Play Store — Aileler İçin Tasarlandı**) ve iOS (**Apple App Store — Kids Category**) mağazalarında yayınlamak için gereken tüm varlıkları ve adımları içerir.\n\n---\n\n## 📁 1. Hazırlanan Mağaza Varlıkları (Store Assets)\n\nTüm mağaza görselleri `games/minik-dunya/store-assets/` dizininde **doğrudan canlı oyun motorundan (React + 2.5D Canvas + Bespoke Vector Art Engine)** yakalanmış gerçek oynanış kareleriyle ve tam mağaza standartlarında üretilmiştir. Daha önceden oluşturulmuş eski şablon/placeholder varlıkların tamamı temizlenmiştir.\n\n### 🤖 Google Play Store Paketi (`store-assets/google-play/`)\n* **Uygulama İkonu:** `icon-512x512.png` (512x512 PNG, 32-bit RGB, gerçek oyun içi Güneş, Aslan, Pastel Balonlar, 3D Ahşap Bloklar ve Minik Dünya logosu)\n* **Öne Çıkan Görsel (Feature Graphic):** `feature-graphic-1024x500.png` (1024x500 PNG, 4 gerçek oyun içi ekran kartı ve özellik rozetleri)\n* **8 Adet Yatay (Landscape) Gerçek Oynanış Ekran Görüntüsü (`1920x1080`):**\n  - `screenshot-01-1920x1080.png` — **17 Eğitici Montessori Mini Oyunu** (Ana Bahçe & 17 oyun kartı)\n  - `screenshot-02-1920x1080.png` — **Balon Bahçesi & Türkçe Renkler** (Canlı balon patlatma ve yıldız partikülleri)\n  - `screenshot-03-1920x1080.png` — **3D Ahşap Bloklar ile Kule & Saray Kur** (2.5D izometrik ahşap saray inşası ve doku paleti)\n  - `screenshot-04-1920x1080.png` — **3D Manyetik Şekiller & Geometri** (Yarı saydam mıknatıslı şato parçaları ve şekil tepsisi)\n  - `screenshot-05-1920x1080.png` — **Gerçek Akustik Piyano & Çocuk Şarkıları** (8 beyaz + 5 siyah abanoz tuş, şarkı rehberi ve uçuşan notalar)\n  - `screenshot-06-1920x1080.png` — **29 Harfli Neşeli Türk Alfabesi** (Sesli harf kartı, Çilek illüstrasyonu ve 29 harflik tam klavye)\n  - `screenshot-07-1920x1080.png` — **Pastel Boyama Kitabı & Yaratıcı Sanat** (Pastel renklerle boyanmış Kelebek sayfası, kova/fırça araçları ve 10 boya kalemi)\n  - `screenshot-08-1920x1080.png` — **Gelişmiş Ebeveyn Paneli & Süre Sınırı** (7 günlük oynama grafiği, günlük özet ve süre yönetimi)\n* **8 Adet Dikey (Portrait) Gerçek Oynanış Ekran Görüntüsü (`1080x1920`):**\n  - `screenshot-portrait-01-1080x1920.png` .. `screenshot-portrait-08-1080x1920.png` (Neşeli Oyuncak Telefon aktif arama ekranı dahil!)\n\n### 🍎 Apple App Store Paketi (`store-assets/app-store/`)\n* **App Store İkonu:** `icon-1024x1024.png` (1024x1024 PNG, alfa kanalsız RGB)\n* **iPhone 6.5\" Yatay Ekran Görüntüleri (8 Adet):** `iphone-6.5-landscape-01-2688x1242.png` .. `08` (`2688x1242`)\n* **iPhone 6.7\" Yatay Ekran Görüntüleri (8 Adet):** `iphone-6.7-landscape-01-2796x1290.png` .. `08` (`2796x1290`)\n* **iPhone 6.5\" Dikey Ekran Görüntüleri (8 Adet):** `iphone-6.5-screenshot-01-1242x2688.png` .. `08` (`1242x2688`)\n* **iPhone 6.7\" Dikey Ekran Görüntüleri (8 Adet):** `iphone-6.7-screenshot-01-1290x2796.png` .. `08` (`1290x2796`)\n* **iPad Pro 12.9\" Yatay Ekran Görüntüleri (8 Adet):** `ipad-12.9-landscape-01-2732x2048.png` .. `08` (`2732x2048`)\n\n### 🎮 Ham Oyun İçi Ekran Görüntüleri (`store-assets/raw-gameplay/`)\n* Çerçevesiz, doğrudan canlı oyundan yakalanmış 12 adet yüksek çözünürlüklü saf oynanış görseli (`01_home_hub`, `02_balloon_garden`, `03_wooden_blocks`, `04_magnetic_shapes`, `05_real_piano`, `06_alphabet_explorer`, `07_coloring_book`, `08_animal_finder`, `09_pattern_train`, `10_shape_sorter`, `11_parent_panel`, `12_toy_phone_portrait`).\n\n### 📱 Web/PWA ve Native Android & iOS Proje İkonları / Splash Ekranları\n* **Web & PWA (`public/`):** `icon.svg`, `icon-192x192.png`, `icon-512x512.png`, `apple-touch-icon.png` ve `manifest.webmanifest` yenilenmiştir.\n* **Android (`android/app/src/main/res/`):** Tüm `mipmap-mdpi` .. `mipmap-xxxhdpi` (`ic_launcher.png`, `ic_launcher_round.png`, `ic_launcher_foreground.png`) ve tüm `drawable-*/splash.png` dosyaları gerçek Minik Dünya görselleriyle güncellenmiştir (eski varsayılan Capacitor ikonları tamamen silinmiştir).\n* **iOS (`ios/App/App/Assets.xcassets/`):** `AppIcon-512@2x.png` (`1024x1024`) ve `Splash.imageset` (`2732x2732`) gerçek Minik Dünya varlıklarıyla güncellenmiştir.\n\n---\n\n## 🤖 2. ANDROID (GOOGLE PLAY) YAYINLAMA ADIMLARI\n\n### Adım 2.1: Prodüksiyon Derlemesi ve Senkronizasyon\n```bash\ncd games/minik-dunya\nnpm run build\nnpx cap sync android\n```\n*(Not: Native iOS/Android prod derlemesinde `storeBilling.js` otomatik olarak Google Play Billing / Apple StoreKit moduna geçer ve web preprod dummy satın alma etiketini kapatır.)*\n\n### Adım 2.2: İmzalı AAB (Android App Bundle) Üretimi\n1. Android Studio'yu açın:\n   ```bash\n   npx cap open android\n   ```\n2. **Build > Generate Signed Bundle / APK... > Android App Bundle (.aab)** adımlarını izleyin.\n3. Keystore dosyanızı seçip `release` hedefiyle `android/app/release/app-release.aab` paketini üretin.\n\n### Adım 2.3: Google Play Console & \"Aileler İçin Tasarlandı\" Ayarları\n1. **Uygulama Oluştur:**\n   - **Ad:** `Minik Dünya: Eğitici Oyunlar`\n   - **Varsayılan Dil:** Türkçe (`tr-TR`)\n   - **Tür:** Oyun / Eğitici (Educational) / Ücretsiz\n2. **Mağaza Girişi:**\n   - `store-metadata.md` içindeki Türkçe ve İngilizce açıklamaları girin.\n   - `icon-512x512.png`, `feature-graphic-1024x500.png` ve yatay/dikey ekran görüntülerini yükleyin.\n3. **Uygulama İçeriği (App Content — Çocuk & Aile Politikası):**\n   - **Gizlilik Politikası:** `privacy-policy.html` dosyasını yayınladığınız URL'yi girin.\n   - **Reklamlar:** **\"Hayır, uygulamam reklam içermiyor\"** seçeneğini işaretleyin.\n   - **Veri Güvenliği (Data Safety):** **\"Hayır, uygulamam hiçbir kullanıcı verisi toplamıyor veya paylaşmıyor\"** seçeneğini işaretleyin.\n   - **Hedef Kitle ve İçerik (Target Audience):** **5 yaş ve altı (Ages 5 and under)** seçerek **Aileler İçin Tasarlandı (Designed for Families)** programına dahil edin.\n4. **Uygulama İçi Ürünler (In-App Products):**\n   - `store-metadata.md` tablosundaki 11 adet `com.minikdunya.*` Product ID'sini **Managed Product (Tek Seferlik Ürün)** olarak tanımlayın ve etkinleştirin.\n\n---\n\n## 🍎 3. iOS (APPLE APP STORE) YAYINLAMA ADIMLARI\n\n### Adım 3.1: Xcode Senkronizasyonu ve Arşivleme\n```bash\ncd games/minik-dunya\nnpm run build\nnpx cap sync ios\nnpx cap open ios\n```\n1. Xcode'da **Bundle Identifier** değerini `com.minikdunya.app` olarak doğrulayın.\n2. **In-App Purchase** capability'sini ekleyin.\n3. **Product > Archive** ile derleyip App Store Connect'e yükleyin.\n\n### Adım 3.2: App Store Connect & Kids Category Ayarları\n1. **Kategori:** `Games > Educational` & `Kids > Ages 5 & Under` kutucuğunu işaretleyin.\n2. **Ekran Görüntüleri:**\n   - `store-assets/app-store/` altındaki 6.5\" iPhone, 6.7\" iPhone ve 12.9\" iPad Pro görsellerini yükleyin.\n3. **App Privacy (Gizlilik Etiketi):** **\"Data Not Collected\" (Veri Toplanmıyor)** olarak kaydedin.\n4. **In-App Purchases:** `store-metadata.md` içindeki 11 adet **Non-Consumable** ürünü (`com.minikdunya.pack.premium_all` ve 10 tekil oyun ID'si) oluşturup sürüme ekleyin.\n5. **App Review Notu (Apple İnceleme Ekibi İçin):**\n   > *\"Minik Dünya is a 100% ad-free Montessori educational app for toddlers (ages 1-4). All parental settings and In-App Purchase sheets are protected behind a multi-turn sequential swipe Parental Gate (drag continuously from dot 1 -> 2 -> 3 -> 4 without lifting your finger).\"*\n",
+  "privacyPolicyUrl": "./store-assets/minik-dunya/privacy-policy.html",
+  "totalImages": 71
+}

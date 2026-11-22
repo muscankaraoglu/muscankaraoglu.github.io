@@ -1,0 +1,21 @@
+{
+  "hasAssets": false,
+  "appStore": {
+    "icon": null,
+    "iphone67": [],
+    "iphone65": [],
+    "ipad": [],
+    "other": []
+  },
+  "googlePlay": {
+    "icon": null,
+    "featureGraphic": null,
+    "landscape": [],
+    "portrait": []
+  },
+  "rawGameplay": [],
+  "metadataMarkdown": "# 📱 App Store & Google Play ASO Kit: Gate Breaker: Morph Saga\n\n## 1. Store Metadata\n\n### 🍎 Apple App Store\n* **App Name (Max 30 chars):** `Gate Breaker: Morph Saga`\n* **Subtitle (Max 30 chars):** `Evolve & Smash Castle Gates!`\n* **Promotional Text:** `Design a peasant, wolf, cyber moto, warhammer, or cosmic orb—pull back, smash enemies, evolve across 5 tiers, and shatter epic fortress gates!`\n* **Keywords (100 chars):** `slingshot,gate,breaker,evolution,rpg,avatar,creator,castle,smash,saga,arcade,hypercasual`\n* **Primary Category:** Games / Action\n* **Secondary Category:** Games / Role Playing\n\n### 🤖 Google Play Store\n* **App Name (Max 30 chars):** `Gate Breaker: Morph Saga`\n* **Short Description (Max 80 chars):** `Design any hero, beast, or vehicle—pull back, evolve, and shatter fortress gates!`\n* **Full Description:**\n```\nBuild your own warrior, beast, turbo vehicle, living warhammer, or cosmic orb in Gate Breaker: Morph Saga—powered by MorphForge Engine!\n\n🔥 KEY FEATURES:\n• Multi-Archetype Avatar Creator: Customize Humanoid, Animal, Vehicle, Artifact, or Abstract entities with hair/top styles, skin/paint colors, accents, and custom names.\n• Hybrid Evolution System: Evolve from a humble Tier 1 rookie to a Tier 5 winged legend with branching specializations AND 5 modular equipment slots!\n• Pull-and-Release Gate Siege: Aim down the fortress lane, smash patrolling guardians, ricochet off walls, and shatter unique material gates (Wood, Iron, Stone, Ice, Magma, Laser, Cosmic).\n• Evolutionary Audio & Visuals: Every tier amplifies your rig's procedural vector armor, particle aura, and Web Audio impact synthesis.\n• Portable DNA Codes: Export and share your character DNA across games!\n```\n\n---\n\n## 2. Store Visuals & Creative Brief\n\n* **App Icon (1024x1024):** A fierce evolved Tier-5 knight & glowing battering ram shattering a cracked bronze fortress gate with golden shockwaves on a deep slate background (#0F172A).\n* **Screenshot 1 (Hook):** \"DESIGN ANY FORM\" (Showcase Human, Wolf, Cyber Moto, Warhammer, and Cosmic Orb inside MorphForge Studio).\n* **Screenshot 2 (Core Loop):** \"PULL, AIM & SHATTER!\" (Slingshot trajectory dots blasting through goblins into a cracking stone gate).\n* **Screenshot 3 (Progression):** \"EVOLVE TIER 1 ➔ TIER 5\" (Before/After comparison: Peasant vs Golden Emperor Titan).\n\n---\n\n## 3. Privacy Policy\n* **Target Audience:** Everyone (PEGI 3 / ESRB Everyone)\n* **Data Collected:** None (Zero personal data stored on external servers; character DNA and saga progress are stored locally on device).\n",
+  "checklistMarkdown": null,
+  "privacyPolicyUrl": null,
+  "totalImages": 0
+}

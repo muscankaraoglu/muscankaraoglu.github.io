@@ -1,0 +1,21 @@
+{
+  "hasAssets": false,
+  "appStore": {
+    "icon": null,
+    "iphone67": [],
+    "iphone65": [],
+    "ipad": [],
+    "other": []
+  },
+  "googlePlay": {
+    "icon": null,
+    "featureGraphic": null,
+    "landscape": [],
+    "portrait": []
+  },
+  "rawGameplay": [],
+  "metadataMarkdown": null,
+  "checklistMarkdown": null,
+  "privacyPolicyUrl": null,
+  "totalImages": 0
+}
