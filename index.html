@@ -3,28 +3,775 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muscan Software Factory — Legal &amp; Privacy</title>
-  <style>
-    body { font-family: system-ui, -apple-system, sans-serif; max-width: 680px; margin: 48px auto; padding: 0 20px; line-height: 1.6; color: #1f2937; }
-    h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
-    ul { padding-left: 1.2rem; }
-    li { margin: 8px 0; }
-    a { color: #2563eb; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .meta { color: #6b7280; font-size: 0.9rem; margin-top: 2rem; }
-  </style>
+  <title>Muscan Software Factory · Yazılım Mühendisliği, Açık Kaynak ve Oyun Stüdyosu</title>
+  <meta name="description" content="Mustafa Can Karaoğlu ve Muscan Software Factory: Myelin sistem dili, Game Factory mobil oyun stüdyosu, Umbrella SaaS ekosistemi, açık kaynak projeler ve resmi gizlilik politikaları." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://muscankaraoglu.github.io/" />
+  <meta property="og:title" content="Muscan Software Factory · Yazılım Mühendisliği ve Oyun Stüdyosu" />
+  <meta property="og:description" content="Myelin sistem programlama dili, Game Factory mobil oyunları, Umbrella SaaS ürünleri ve açık kaynak mühendislik çalışmaları." />
+  <meta property="og:image" content="https://muscankaraoglu.github.io/assets/games/chromeblade2-feature.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Muscan Software Factory</h1>
-  <p>Resmi gizlilik politikaları ve uygulama doğrulama dosyaları:</p>
-  <ul>
-    <li><a href="privacy/chromeblade.html">Chromeblade — Privacy Policy</a></li>
-    <li><a href="privacy/chromeblade-2.html">Chromeblade 2: Zero Protocol — Gizlilik Politikası</a></li>
-    <li><a href="privacy/mochi-tower.html">Mochi Tower Climb — Privacy Policy</a></li>
-    <li><a href="privacy/minik-dunya.html">Minik Dünya — Gizlilik Politikası</a></li>
-    <li><a href="app-ads.txt">app-ads.txt</a></li>
-  </ul>
-  <p class="meta">İletişim: <a href="mailto:muscankaraoglu@gmail.com">muscankaraoglu@gmail.com</a></p>
+  <a href="#main-content" class="skip-link button-sm">İçeriğe geç</a>
+
+  <!-- Floating Top Navigation -->
+  <header class="nav-wrapper">
+    <nav class="nav-bar" aria-label="Ana gezinme">
+      <a href="#top" class="nav-brand">
+        <span class="nav-logo-mark" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19V5l8 8 8-8v14" />
+          </svg>
+        </span>
+        <span class="title-4">Muscan</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#work-areas" class="nav-link title-4" data-section="work-areas">Alanlar</a></li>
+        <li><a href="#game-factory" class="nav-link title-4" data-section="game-factory">Game Factory</a></li>
+        <li><a href="#open-source" class="nav-link title-4" data-section="open-source">Açık Kaynak</a></li>
+        <li><a href="#private-works" class="nav-link title-4" data-section="private-works">Ürünler</a></li>
+        <li><a href="#legal" class="nav-link title-4" data-section="legal">Yasal</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://github.com/muscankaraoglu" target="_blank" rel="noopener noreferrer" class="btn btn-secondary button-sm nav-desktop-cta">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" />
+          </svg>
+          <span>GitHub</span>
+        </a>
+
+        <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Menüyü aç">
+          <span class="menu-toggle-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Full-Height Mobile Menu Drawer -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <nav aria-label="Mobil gezinme">
+      <ul class="mobile-drawer-list">
+        <li class="mobile-drawer-item"><a href="#work-areas" class="mobile-drawer-link heading-3">Çalışma Alanları</a></li>
+        <li class="mobile-drawer-item"><a href="#game-factory" class="mobile-drawer-link heading-3">Game Factory</a></li>
+        <li class="mobile-drawer-item"><a href="#open-source" class="mobile-drawer-link heading-3">Açık Kaynak</a></li>
+        <li class="mobile-drawer-item"><a href="#private-works" class="mobile-drawer-link heading-3">Ticari Ürünler</a></li>
+        <li class="mobile-drawer-item"><a href="#legal" class="mobile-drawer-link heading-3">Yasal ve Gizlilik</a></li>
+        <li class="mobile-drawer-item"><a href="https://github.com/muscankaraoglu" target="_blank" rel="noopener noreferrer" class="mobile-drawer-link heading-3">GitHub Profili</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="top" class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="eyebrow-pill caption-3">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            <span>Muscan Software Factory · Mustafa Can Karaoğlu</span>
+          </div>
+
+          <h1 class="heading-1 hero-heading">
+            Sistem dillerinden otonom oyun<br />stüdyosuna uzanan yazılım üretimi
+          </h1>
+
+          <p class="body-3 hero-sub">
+            Yapay zekâ çağının sistem programlama dili Myelin, mobil oyun stüdyosu Game Factory, çoklu ürün SaaS çatısı Umbrella ve açık kaynak mühendislik çalışmaları tek merkezde.
+          </p>
+
+          <div class="hero-cta-row">
+            <a href="#game-factory" class="btn btn-primary button-md">
+              <span>Çalışmaları incele</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="proof-strip" aria-label="Öne çıkan çalışmalar özeti">
+            <div class="proof-item">
+              <span class="heading-5 proof-value mono">4</span>
+              <span class="caption-2 proof-label">Mağazaya hazır mobil oyun</span>
+            </div>
+            <div class="proof-item">
+              <span class="heading-5 proof-value mono">6</span>
+              <span class="caption-2 proof-label">Açık kaynak mühendislik reposu</span>
+            </div>
+            <div class="proof-item">
+              <span class="heading-5 proof-value mono">5</span>
+              <span class="caption-2 proof-label">Ticari ürün ve çözüm alanı</span>
+            </div>
+            <div class="proof-item">
+              <span class="heading-5 proof-value mono">Rust · .NET</span>
+              <span class="caption-2 proof-label">Sistem, web ve mobil yığın</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Areas Overview -->
+    <section id="work-areas" class="section section-elevated">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="caption-3 section-kicker">Çalışma Alanları</span>
+          <h2 class="heading-2">Farklı disiplinlerde uçtan uca üretim</h2>
+          <p class="body-3 section-desc">
+            Derleyici tasarımından mobil oyun geliştirmeye, dağıtık arka uç mimarilerinden kurumsal dijital imza çözümlerine kadar tüm üretim başlıkları.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <article class="pillar-card reveal">
+            <div class="pillar-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="6" width="20" height="12" rx="4" />
+                <path d="M6 12h4" />
+                <path d="M8 10v4" />
+                <circle cx="15.5" cy="11" r="0.75" fill="currentColor" />
+                <circle cx="17.5" cy="13" r="0.75" fill="currentColor" />
+              </svg>
+            </div>
+            <h3 class="title-2">Game Factory</h3>
+            <p class="body-6">Pazar araştırmasından 2D ve 3D oynanış geliştirmeye, mağaza görsellerinden iOS ve Android yayınına uzanan mobil oyun stüdyosu.</p>
+            <a href="#game-factory" class="pillar-link button-sm">Oyunları gör →</a>
+          </article>
+
+          <article class="pillar-card reveal">
+            <div class="pillar-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 17 10 11 4 5" />
+                <line x1="12" y1="19" x2="20" y2="19" />
+              </svg>
+            </div>
+            <h3 class="title-2">Myelin ve Sistem Dilleri</h3>
+            <p class="body-6">Büyük dil modelleri tarafından yazılmak ve donanım hızında çalışmak üzere Rust ile geliştirilen yetki güvenli sistem programlama dili.</p>
+            <a href="#open-source" class="pillar-link button-sm">Detayları incele →</a>
+          </article>
+
+          <article class="pillar-card reveal">
+            <div class="pillar-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                <polyline points="2 17 12 22 22 17" />
+                <polyline points="2 12 12 17 22 12" />
+              </svg>
+            </div>
+            <h3 class="title-2">Umbrella ve SaaS Ürünleri</h3>
+            <p class="body-6">Çoklu dikey SaaS uygulamaları, elektronik imza, dijital kimlik, ödeme simülasyonu ve sektörel takip platformları.</p>
+            <a href="#private-works" class="pillar-link button-sm">Ürünlere göz at →</a>
+          </article>
+
+          <article class="pillar-card reveal">
+            <div class="pillar-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+              </svg>
+            </div>
+            <h3 class="title-2">Yasal ve Doğrulama</h3>
+            <p class="body-6">Yayınlanan mobil oyunların resmi gizlilik politikaları, veri güvenliği beyanları ve uygulama reklam doğrulama dosyaları.</p>
+            <a href="#legal" class="pillar-link button-sm">Belgelere ulaş →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mandatory Tagline Reveal Section (B11) -->
+    <section class="tagline-section" aria-label="Mühendislik yaklaşımı">
+      <div class="container">
+        <p id="tagline-reveal" class="heading-2 tagline-copy">
+          Fikirden çalışan ürüne giden mesafeyi kısaltıyoruz. Her projede yalın mimari, ölçülebilir performans ve gerçek kullanıcı değeri önceliğimiz.
+        </p>
+      </div>
+    </section>
+
+    <!-- Game Factory Section -->
+    <section id="game-factory" class="section section-elevated">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="caption-3 section-kicker">Game Factory · Mobil Oyun Stüdyosu</span>
+          <h2 class="heading-2">Fikirden mağaza vitrinine otonom oyun üretimi</h2>
+          <p class="body-3 section-desc">
+            Game Factory; pazar analizi, oyun tasarımı, 2D ve 3D oynanış geliştirme, ses ve görsel geri bildirim optimizasyonu ile mağaza paketlemesini tek bir modüler üretim hattında birleştirir.
+          </p>
+        </div>
+
+        <!-- 3-Step Studio Process -->
+        <div class="process-grid">
+          <article class="process-card reveal">
+            <span class="caption-3 mono process-step-num">01 · KONSEPT VE TASARIM</span>
+            <h3 class="title-2">Pazar analizi ve çekirdek döngü</h3>
+            <p class="body-6">App Store ve Google Play kategorilerindeki oyuncu beklentileri incelenir; net kontrollere, yüksek tekrar oynanabilirliğe ve dengeli ilerleyişe sahip oyun tasarım dokümanı hazırlanır.</p>
+          </article>
+          <article class="process-card reveal">
+            <span class="caption-3 mono process-step-num">02 · GELİŞTİRME VE OYUN HİSSİ</span>
+            <h3 class="title-2">Akıcı motor ve tepkisel geri bildirim</h3>
+            <p class="body-6">Dokunmatik kontrollere uyumlu 60 FPS sahneler inşa edilir. Partikül efektleri, ekran sarsıntısı, prosedürel ses sentezleri ve yerel dil desteğiyle cilalı bir deneyim sunulur.</p>
+          </article>
+          <article class="process-card reveal">
+            <span class="caption-3 mono process-step-num">03 · YAYIN VE PAZARLAMA</span>
+            <h3 class="title-2">Çapraz platform derleme ve ASO</h3>
+            <p class="body-6">iOS ve Android paketleri üretilir; doğrudan çalışan oyun sahnelerinden alınan gerçek ekran görüntüleri, çok dilli mağaza metinleri ve gizlilik belgeleriyle yayına hazır hale getirilir.</p>
+          </article>
+        </div>
+
+        <!-- Flagship Games -->
+        <div class="games-list">
+          <!-- Game 1: Chromeblade -->
+          <article class="game-card reveal">
+            <div class="game-media">
+              <button type="button" class="game-feature-btn" data-lightbox-src="assets/games/chromeblade-feature.webp" data-lightbox-alt="Chromeblade 8 Bit Siber Koşu tanıtım görseli" data-lightbox-title="Chromeblade: 8 Bit Siber Koşu">
+                <img src="assets/games/chromeblade-feature.webp" alt="Chromeblade 8 Bit Siber Koşu tanıtım görseli" class="game-feature-img" width="1024" height="500" loading="lazy" />
+              </button>
+              <div class="game-thumbs">
+                <button type="button" class="game-thumb-btn" data-lightbox-src="assets/games/chromeblade-shot-1.webp" data-lightbox-alt="Chromeblade Mercan Gün Batımı oyun içi sahnesi" data-lightbox-title="Chromeblade · Mercan Gün Batımı">
+                  <img src="assets/games/chromeblade-shot-1.webp" alt="Chromeblade Mercan Gün Batımı oyun içi sahnesi" class="game-thumb-img game-thumb-img--portrait" width="540" height="960" loading="lazy" />
+                  <span class="caption-5 game-thumb-caption">Mercan Gün Batımı</span>
+                </button>
+                <button type="button" class="game-thumb-btn" data-lightbox-src="assets/games/chromeblade-shot-2.webp" data-lightbox-alt="Chromeblade Altın Olimpos oyun içi sahnesi" data-lightbox-title="Chromeblade · Altın Olimpos">
+                  <img src="assets/games/chromeblade-shot-2.webp" alt="Chromeblade Altın Olimpos oyun içi sahnesi" class="game-thumb-img game-thumb-img--portrait" width="540" height="960" loading="lazy" />
+                  <span class="caption-5 game-thumb-caption">Altın Olimpos</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="game-content">
+              <div class="game-head">
+                <img src="assets/games/chromeblade-icon.webp" alt="Chromeblade uygulama ikonu" class="game-icon" width="56" height="56" loading="lazy" />
+                <div>
+                  <h3 class="heading-5">Chromeblade: 8 Bit Siber Koşu</h3>
+                  <p class="caption-2 game-subtitle">Retro Piksel Arcade Koşu · iOS ve Android</p>
+                </div>
+              </div>
+
+              <p class="body-3 game-marketing">
+                Siber Valkyrie ve 7 benzersiz koşucuyla Mercan Gün Batımı, Arktik Buzul, Zümrüt Bio Dome ve Altın Olimpos dahil 10 canlı dünyada son sürat ilerle. Seviye atladıkça açılan 5 güçlendirme, 2 ila 4 şerit arasında dinamik genişleyen otoyollar ve internetsiz 60 FPS retro arcade heyecanı cebinde.
+              </p>
+
+              <div class="game-process-box">
+                <span class="caption-3 game-process-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.6.85 1 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                  </svg>
+                  Geliştirme Süreci
+                </span>
+                <p class="body-6">
+                  Sürekli karanlık neon klişesini kırmak için 10 farklı gündüz ve gün batımı renk paleti tasarlandı. Şerit değişim tepki süresi, yakın geçiş kombo penceresi ve kademeli güçlendirme keşfi canlı oyun içi testlerle ince ayarlandı; tüm mağaza görselleri gerçek çalışan oyundan otomatik yakalandı.
+                </p>
+              </div>
+
+              <div class="tag-row">
+                <span class="tag caption-4">10 Canlı Dünya</span>
+                <span class="tag caption-4">8 Siber Koşucu</span>
+                <span class="tag caption-4">5 Güçlendirme</span>
+                <span class="tag caption-4">Çevrimdışı 60 FPS</span>
+              </div>
+
+              <div class="game-actions">
+                <a href="privacy/chromeblade.html" class="btn btn-ghost button-sm">Gizlilik Politikası</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Game 2: Chromeblade 2 -->
+          <article class="game-card reveal">
+            <div class="game-media">
+              <button type="button" class="game-feature-btn" data-lightbox-src="assets/games/chromeblade2-feature.webp" data-lightbox-alt="Chromeblade 2 Zero Protocol tanıtım görseli" data-lightbox-title="Chromeblade 2: Zero Protocol">
+                <img src="assets/games/chromeblade2-feature.webp" alt="Chromeblade 2 Zero Protocol tanıtım görseli" class="game-feature-img" width="1024" height="500" loading="lazy" />
+              </button>
+              <div class="game-thumbs">
+                <button type="button" class="game-thumb-btn" data-lightbox-src="assets/games/chromeblade2-shot-1.webp" data-lightbox-alt="Chromeblade 2 perspektif otoyol sahnesi" data-lightbox-title="Chromeblade 2 · Perspektif Otoyol">
+                  <img src="assets/games/chromeblade2-shot-1.webp" alt="Chromeblade 2 perspektif otoyol sahnesi" class="game-thumb-img game-thumb-img--portrait" width="540" height="960" loading="lazy" />
+                  <span class="caption-5 game-thumb-caption">Ufuk Perspektifi</span>
+                </button>
+                <button type="button" class="game-thumb-btn" data-lightbox-src="assets/games/chromeblade2-shot-2.webp" data-lightbox-alt="Chromeblade 2 Altın Olimpos 3D perspektif sahnesi" data-lightbox-title="Chromeblade 2 · Altın Olimpos">
+                  <img src="assets/games/chromeblade2-shot-2.webp" alt="Chromeblade 2 Altın Olimpos 3D perspektif sahnesi" class="game-thumb-img game-thumb-img--portrait" width="540" height="960" loading="lazy" />
+                  <span class="caption-5 game-thumb-caption">Altın Olimpos</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="game-content">
+              <div class="game-head">
+                <img src="assets/games/chromeblade2-icon.webp" alt="Chromeblade 2 uygulama ikonu" class="game-icon" width="56" height="56" loading="lazy" />
+                <div>
+                  <h3 class="heading-5">Chromeblade 2: Zero Protocol</h3>
+                  <p class="caption-2 game-subtitle">Sahte 3D Perspektif Arcade Koşu · iOS ve Android</p>
+                </div>
+              </div>
+
+              <p class="body-3 game-marketing">
+                Geliştirilmiş sahte 3D ufuk perspektifiyle yüksek hızlı arcade aksiyonu yeni bir boyuta taşı. 10 panoramik dünya, lazer kilitleri, termal vuruş bölgeleri, kalıcı zırh yükseltmeleri ve 8 seçilebilir kahramanla reflekslerini sına; tek şok dalgasıyla tüm tehlikeleri altına çevir.
+              </p>
+
+              <div class="game-process-box">
+                <span class="caption-3 game-process-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.6.85 1 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                  </svg>
+                  Geliştirme Süreci
+                </span>
+                <p class="body-6">
+                  İlk oyunun yukarıdan görünümlü yapısından derinlik hissi yüksek panoramik ufuk motoruna geçildi. Titanyum gövde ve şans çipi gibi kalıcı hangar yükseltmeleri eklendi; otomatik iOS derleme boru hattı ve çoklu ekran çözünürlüğü için mağaza varlık üretimi entegre edildi.
+                </p>
+              </div>
+
+              <div class="tag-row">
+                <span class="tag caption-4">Panoramik Sahte 3D</span>
+                <span class="tag caption-4">Zırh Yükseltmeleri</span>
+                <span class="tag caption-4">Dinamik Şeritler</span>
+                <span class="tag caption-4">Türkçe ve İngilizce</span>
+              </div>
+
+              <div class="game-actions">
+                <a href="privacy/chromeblade-2.html" class="btn btn-ghost button-sm">Gizlilik Politikası</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Game 3: Mochi Tower Climb -->
+          <article class="game-card reveal">
+            <div class="game-media">
+              <button type="button" class="game-feature-btn" data-lightbox-src="assets/games/mochi-feature.webp" data-lightbox-alt="Mochi Kule 3D platform oyunu tanıtım görseli" data-lightbox-title="Mochi Kule (Mochi Tower Climb)">
+                <img src="assets/games/mochi-feature.webp" alt="Mochi Kule 3D platform oyunu tanıtım görseli" class="game-feature-img" width="1024" height="500" loading="lazy" />
+              </button>
+              <div class="game-thumbs">
+                <button type="button" class="game-thumb-btn" data-lightbox-src="assets/games/mochi-shot-1.webp" data-lightbox-alt="Mochi Kule Çilekli Mochi Kulesi 3D tırmanış sahnesi" data-lightbox-title="Mochi Kule · 3D Tırmanış">
+                  <img src="assets/games/mochi-shot-1.webp" alt="Mochi Kule Çilekli Mochi Kulesi 3D tırmanış sahnesi" class="game-thumb-img" width="960" height="540" loading="lazy" />
+                  <span class="caption-5 game-thumb-caption">3D Kule Tırmanışı</span>
+                </button>
+                <button type="button" class="game-thumb-btn" data-lightbox-src="assets/games/mochi-shot-2.webp" data-lightbox-alt="Mochi Kule kurtarılan hayvan dostlar bahçesi" data-lightbox-title="Mochi Kule · Kurtarılanlar Bahçesi">
+                  <img src="assets/games/mochi-shot-2.webp" alt="Mochi Kule kurtarılan hayvan dostlar bahçesi" class="game-thumb-img" width="960" height="540" loading="lazy" />
+                  <span class="caption-5 game-thumb-caption">Kurtarılanlar Bahçesi</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="game-content">
+              <div class="game-head">
+                <img src="assets/games/mochi-icon.webp" alt="Mochi Kule uygulama ikonu" class="game-icon" width="56" height="56" loading="lazy" />
+                <div>
+                  <h3 class="heading-5">Mochi Kule (Mochi Tower Climb)</h3>
+                  <p class="caption-2 game-subtitle">3D Pastel Platform Tırmanışı · Yatay Ekran</p>
+                </div>
+              </div>
+
+              <p class="body-3 game-marketing">
+                Çilekli Mochi Kulesi, Matcha Bulutları, Lavanta Rüyası, Gökkuşağı Bulut Sarayı ve Sakura Akşamı kulelerine tırman. Yıldızları topla, itfaiye can kurtaran filesiyle düşüşlerden kurtul ve zirvedeki kalp kilitli kafeslerden 8 sevimli hayvan dostunu kurtarıp 3D bahçeni büyüt.
+              </p>
+
+              <div class="game-process-box">
+                <span class="caption-3 game-process-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.6.85 1 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                  </svg>
+                  Geliştirme Süreci
+                </span>
+                <p class="body-6">
+                  Tamamen gerçek zamanlı 3D Three.js sahnesi üzerinde yumuşak pastel ışıklandırma, sarmal kamera takibi ve affedici platform fiziği kurgulandı. Cihaz diline göre otomatik Türkçe ve İngilizce arayüz geçişi ile yatay ekran ergonomisi optimize edildi.
+                </p>
+              </div>
+
+              <div class="tag-row">
+                <span class="tag caption-4">Gerçek Zamanlı 3D</span>
+                <span class="tag caption-4">8 Kurtarılan Dost</span>
+                <span class="tag caption-4">Sonsuz Kuleler</span>
+                <span class="tag caption-4">Otomatik TR ve EN</span>
+              </div>
+
+              <div class="game-actions">
+                <a href="privacy/mochi-tower.html" class="btn btn-ghost button-sm">Gizlilik Politikası</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Game 4: Minik Dünya -->
+          <article class="game-card reveal">
+            <div class="game-media">
+              <button type="button" class="game-feature-btn" data-lightbox-src="assets/games/minik-feature.webp" data-lightbox-alt="Minik Dünya 1 ila 4 yaş eğitici Montessori oyunları tanıtım görseli" data-lightbox-title="Minik Dünya: Eğitici Oyunlar">
+                <img src="assets/games/minik-feature.webp" alt="Minik Dünya 1 ila 4 yaş eğitici Montessori oyunları tanıtım görseli" class="game-feature-img" width="1024" height="500" loading="lazy" />
+              </button>
+              <div class="game-thumbs">
+                <button type="button" class="game-thumb-btn" data-lightbox-src="assets/games/minik-shot-1.webp" data-lightbox-alt="Minik Dünya 3D Ahşap Bloklar oyun içi sahnesi" data-lightbox-title="Minik Dünya · 3D Ahşap Bloklar">
+                  <img src="assets/games/minik-shot-1.webp" alt="Minik Dünya 3D Ahşap Bloklar oyun içi sahnesi" class="game-thumb-img" width="960" height="540" loading="lazy" />
+                  <span class="caption-5 game-thumb-caption">3D Ahşap Bloklar</span>
+                </button>
+                <button type="button" class="game-thumb-btn" data-lightbox-src="assets/games/minik-shot-2.webp" data-lightbox-alt="Minik Dünya Gerçek Akustik Piyano oyun içi sahnesi" data-lightbox-title="Minik Dünya · Gerçek Akustik Piyano">
+                  <img src="assets/games/minik-shot-2.webp" alt="Minik Dünya Gerçek Akustik Piyano oyun içi sahnesi" class="game-thumb-img" width="960" height="540" loading="lazy" />
+                  <span class="caption-5 game-thumb-caption">Akustik Piyano</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="game-content">
+              <div class="game-head">
+                <img src="assets/games/minik-icon.webp" alt="Minik Dünya uygulama ikonu" class="game-icon" width="56" height="56" loading="lazy" />
+                <div>
+                  <h3 class="heading-5">Minik Dünya: Eğitici Oyunlar</h3>
+                  <p class="caption-2 game-subtitle">1 ila 4 Yaş Montessori Oyun Bahçesi · %100 Reklamsız</p>
+                </div>
+              </div>
+
+              <p class="body-3 game-marketing">
+                12 ila 48 ay çocuklar için aşırı uyarıcı flaşlardan ve reklamlardan tamamen arındırılmış sakin bir keşif dünyası. 3D Ahşap Bloklar, 3D Manyetik Şekiller, Gerçek Akustik Piyano, 29 Harfli Neşeli Alfabe ve Boyama Kitabı dahil 17 eğitici mini oyun, doğal Türkçe seslendirme ve akıllı ebeveyn kontrol paneli bir arada.
+              </p>
+
+              <div class="game-process-box">
+                <span class="caption-3 game-process-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.6.85 1 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                  </svg>
+                  Geliştirme Süreci
+                </span>
+                <p class="body-6">
+                  Pedagojik Montessori ilkeleri temel alınarak göz yormayan sıcak pastel arayüz, cezalandırmasız pozitif geri bildirim ve yanlışlıkla çıkışı önleyen ebeveyn kapısı geliştirildi. Süre dolduğunda alarm yerine yumuşak Uyuyan Ay ekranıyla dinlenmeye geçiş sağlandı; abonelik baskısı olmadan tek seferlik açılım modeli kuruldu.
+                </p>
+              </div>
+
+              <div class="tag-row">
+                <span class="tag caption-4">17 Eğitici Mini Oyun</span>
+                <span class="tag caption-4">%100 Reklamsız</span>
+                <span class="tag caption-4">Türkçe Seslendirme</span>
+                <span class="tag caption-4">Ebeveyn Paneli</span>
+              </div>
+
+              <div class="game-actions">
+                <a href="privacy/minik-dunya.html" class="btn btn-ghost button-sm">Gizlilik Politikası</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Studio Lab & Prototypes -->
+        <div class="studio-lab reveal">
+          <span class="caption-3 section-kicker">Stüdyo Laboratuvarı ve Motor Teknolojileri</span>
+          <h3 class="heading-5">MorphForge karakter motoru ve yeni oyun prototipleri</h3>
+          <p class="body-6">
+            Game Factory bünyesinde prosedürel karakter oluşturma ve evrim mekanikleri sunan MorphForge motorunun yanı sıra; çok oyunculu aksiyon, arena dövüşü ve strateji türlerinde Fatal Strike, Gate Breaker, Pocket Realm ve Smash Heads prototipleri aktif olarak geliştirilmektedir.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Open Source Projects Section (Full Details) -->
+    <section id="open-source" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="caption-3 section-kicker">Açık Kaynak · Public Repolar</span>
+          <h2 class="heading-2">Toplulukla paylaşılan mühendislik çalışmaları</h2>
+          <p class="body-3 section-desc">
+            Derleyici mimarisinden dağıtık .NET sistem desenlerine, veri setlerinden otomasyon araçlarına kadar kaynak kodu herkese açık tüm projeler.
+          </p>
+        </div>
+
+        <!-- Featured Public Repo: Myelin -->
+        <article class="featured-repo reveal">
+          <div class="featured-repo-top">
+            <div class="featured-repo-title">
+              <div class="tag-row">
+                <span class="tag caption-4 mono">myelin-lang</span>
+                <span class="tag caption-4">Rust</span>
+                <span class="tag caption-4">MIT veya Apache 2.0</span>
+              </div>
+              <h3 class="heading-3">Myelin (.myl) Sistem Programlama Dili</h3>
+              <p class="body-3 featured-repo-desc">
+                Otonom yapay zekâ çağında büyük dil modelleri tarafından yazılmak, donanım hızında çalışmak ve insanlar tarafından tek satır kaynak kod okumadan matematiksel yetki manifestosuyla denetlenmek üzere sıfırdan tasarlanan sistem dili.
+              </p>
+            </div>
+            <div class="cta-actions">
+              <a href="https://github.com/muscankaraoglu/myelin-lang" target="_blank" rel="noopener noreferrer" class="btn btn-primary button-sm">GitHub Reposu</a>
+              <a href="https://muscankaraoglu.github.io/myelin-lang/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary button-sm">Resmi Wiki</a>
+              <a href="https://github.com/muscankaraoglu/myelin-lang/releases" target="_blank" rel="noopener noreferrer" class="btn btn-ghost button-sm">Sürümler</a>
+            </div>
+          </div>
+
+          <div class="repo-specs-grid">
+            <div class="repo-spec">
+              <h4 class="title-3">Token Verimli Flat Line SSA</h4>
+              <p class="body-6">Süslü parantez ve tekrarlı kalıp yükünü ortadan kaldırır. Yaklaşık 900 token boyutundaki <span class="mono">SKILL.md</span> tanımı ve tek satırlık <span class="mono">myelinc check --llm</span> onarım çıktısıyla ajan üretim döngüsünü hızlandırır.</p>
+            </div>
+            <div class="repo-spec">
+              <h4 class="title-3">Çöp Toplayıcısız Perceus RC</h4>
+              <p class="body-6">Derleme zamanı referans sayımı ile bellek güvenliğini çöp toplayıcı duraklamaları olmadan sağlar. Windows, Linux ve macOS için sıfır bağımlılıklı hazır <span class="mono">myelinc</span> ikili paketleri sunar.</p>
+            </div>
+            <div class="repo-spec">
+              <h4 class="title-3">Yetki ve Güven Denetimi</h4>
+              <p class="body-6">Örtük işletim sistemi yetkisi yoktur. <span class="mono">myelinc audit</span> komutu dosya (<span class="mono">!fs</span>), ağ (<span class="mono">!net</span>), veritabanı (<span class="mono">!db</span>) yetkilerini, sözleşmeleri ve SHA 256 parmak izini raporlar.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Other Public Repos Grid -->
+        <div class="repos-grid">
+          <article class="repo-card reveal">
+            <div class="repo-card-head">
+              <h3 class="title-1 mono">event-source-and-outbox-pattern</h3>
+              <span class="tag caption-4">C# · .NET</span>
+            </div>
+            <p class="body-6">Dağıtık sistemlerde veri tutarlılığı ve güvenilir olay iletimi için Event Sourcing ve Outbox Pattern desenlerini birlikte uygulayan referans proje.</p>
+            <ul class="repo-details-list body-6">
+              <li><span class="mono">OrderService</span> ve <span class="mono">OutboxProcessor</span> ile sipariş olaylarının atomik kaydı ve işlenmesi</li>
+              <li><span class="mono">InMemoryOrderRepository</span>, <span class="mono">InMemoryOutboxRepository</span> ve olay veriyolu soyutlamaları</li>
+              <li>Birim test odaklı yalın katmanlı mimari</li>
+            </ul>
+            <div class="repo-card-footer">
+              <a href="https://github.com/muscankaraoglu/event-source-and-outbox-pattern" target="_blank" rel="noopener noreferrer" class="btn btn-secondary button-sm">Repoyu incele →</a>
+            </div>
+          </article>
+
+          <article class="repo-card reveal">
+            <div class="repo-card-head">
+              <h3 class="title-1 mono">rate-limiting</h3>
+              <span class="tag caption-4">C# · .NET 8</span>
+            </div>
+            <p class="body-6">.NET 8 yerleşik Rate Limiting mekanizmalarını gerçek hayat senaryolarıyla karşılaştıran ve doğrulayan örnek uygulama ve test paketi.</p>
+            <ul class="repo-details-list body-6">
+              <li>Sabit pencere, kayan pencere, token kovası ve eşzamanlılık sınırlayıcı pratikleri</li>
+              <li>Yerel sunucuya istek gönderen HTTP test projesiyle canlı davranış gözlemi</li>
+              <li>İlgili Türkçe teknik Medium makalesiyle birebir eşleşen kod tabanı</li>
+            </ul>
+            <div class="repo-card-footer">
+              <a href="https://github.com/muscankaraoglu/rate-limiting" target="_blank" rel="noopener noreferrer" class="btn btn-secondary button-sm">Repoyu incele →</a>
+              <a href="https://muscankaraoglu.medium.com/net-8-ile-rate-limiting-ve-ger%C3%A7ek-hayat-senaryolar%C4%B1-16c626fe49f6" target="_blank" rel="noopener noreferrer" class="btn btn-ghost button-sm">Medium Makalesi</a>
+            </div>
+          </article>
+
+          <article class="repo-card reveal">
+            <div class="repo-card-head">
+              <h3 class="title-1 mono">saas-tryings</h3>
+              <span class="tag caption-4">C# · Blazor · EF Core</span>
+            </div>
+            <p class="body-6">ASP.NET Core, Blazor WebAssembly ve EF Core üzerinde modüler monolit yaklaşımla çoklu alan destekli SaaS şablon çalışması.</p>
+            <ul class="repo-details-list body-6">
+              <li>Her alt iş alanını kendi bağımsız modülü olarak yapılandıran temiz sınırlar</li>
+              <li><span class="mono">Shared.Kernel</span>, <span class="mono">Shared.Features</span> ve <span class="mono">Shared.Client</span> ortak çekirdek katmanları</li>
+              <li><span class="mono">Web.Server</span> ve <span class="mono">Web.Client</span> ile bütünleşik tam yığın yapı</li>
+            </ul>
+            <div class="repo-card-footer">
+              <a href="https://github.com/muscankaraoglu/saas-tryings" target="_blank" rel="noopener noreferrer" class="btn btn-secondary button-sm">Repoyu incele →</a>
+            </div>
+          </article>
+
+          <article class="repo-card reveal">
+            <div class="repo-card-head">
+              <h3 class="title-1 mono">data-scraper</h3>
+              <span class="tag caption-4">Veri ve Panel</span>
+            </div>
+            <p class="body-6">Belirlenen web kaynaklarından yapılandırılmış veri toplayan ve sonuçları özel bir gösterge paneli üzerinden izlemeye imkân veren uygulama.</p>
+            <ul class="repo-details-list body-6">
+              <li>Otomatik veri çekme ve düzenli kayıt toplama akışı</li>
+              <li>Toplanan kayıtları görselleştiren özel kontrol paneli arayüzü</li>
+            </ul>
+            <div class="repo-card-footer">
+              <a href="https://github.com/muscankaraoglu/data-scraper" target="_blank" rel="noopener noreferrer" class="btn btn-secondary button-sm">Repoyu incele →</a>
+            </div>
+          </article>
+
+          <article class="repo-card reveal">
+            <div class="repo-card-head">
+              <h3 class="title-1 mono">turkiye-il-ilce-mahalle</h3>
+              <span class="tag caption-4">MSSQL · Veri Seti</span>
+            </div>
+            <p class="body-6">Türkiye genelindeki tüm il, ilçe ve mahalle verilerini ilişkisel MSSQL veritabanlarına saniyeler içinde aktarmak için hazır SQL betikleri.</p>
+            <ul class="repo-details-list body-6">
+              <li><span class="mono">Cities</span> → <span class="mono">Districts</span> → <span class="mono">Neighborhoods</span> hiyerarşik tablo şeması</li>
+              <li>Adres seçimi gerektiren kurumsal ve e ticaret projelerinde doğrudan kullanıma hazır</li>
+            </ul>
+            <div class="repo-card-footer">
+              <a href="https://github.com/muscankaraoglu/turkiye-il-ilce-mahalle" target="_blank" rel="noopener noreferrer" class="btn btn-secondary button-sm">Repoyu incele →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Private / Commercial Works Section (Trade-Secret Safe Marketing) -->
+    <section id="private-works" class="section section-elevated">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="caption-3 section-kicker">Ticari Ürünler ve Özel Çözümler</span>
+          <h2 class="heading-2">Kurumsal ve ticari yazılım portföyü</h2>
+          <p class="body-3 section-desc">
+            Kapalı kaynaklı ürün aileleri, dikey SaaS girişimleri ve sektörel yazılım çözümlerinin ürün odaklı özeti.
+          </p>
+        </div>
+
+        <div class="private-grid">
+          <article class="private-card private-card--wide reveal">
+            <span class="caption-4 private-badge">Çoklu Ürün SaaS Ekosistemi</span>
+            <h3 class="heading-5">Umbrella SaaS Platformu ve Dikey Uygulamalar</h3>
+            <p class="body-3">
+              Yeni bir SaaS ürününü haftalar yerine günler içinde pazara çıkarmak için tasarlanmış modüler platform çatısı. Ortak kimlik doğrulama, abonelik yönetimi, özellik kilitleme ve merkezi portal altyapısı sayesinde web sitelerine gömülebilir yapay zekâ sohbet asistanı (Embedo) başta olmak üzere birden fazla dikey ürün tek çekirdek üzerinde ölçeklenir.
+            </p>
+            <div class="tag-row">
+              <span class="tag caption-4">Çoklu Ürün Mimarisi</span>
+              <span class="tag caption-4">Abonelik ve Faturalandırma</span>
+              <span class="tag caption-4">Gömülebilir AI Asistan</span>
+            </div>
+          </article>
+
+          <article class="private-card reveal">
+            <span class="caption-4 private-badge">Güvenlik ve Belge</span>
+            <h3 class="heading-6">Elektronik İmza ve Dijital Kimlik</h3>
+            <p class="body-6">
+              Kurumsal elektronik imza, mobil imza istemcileri, komut satırı imzalama araçları, PDF belge işleme ve dijital kimlik doğrulama akışlarını güvenilir biçimde yöneten yazılım ürünleri.
+            </p>
+            <div class="tag-row">
+              <span class="tag caption-4">E İmza ve Mobil İmza</span>
+              <span class="tag caption-4">PDF Araçları</span>
+            </div>
+          </article>
+
+          <article class="private-card reveal">
+            <span class="caption-4 private-badge">Finansal Teknoloji</span>
+            <h3 class="heading-6">Ödeme Sistemleri ve POS Simülasyonu</h3>
+            <p class="body-6">
+              Ödeme terminali ve POS entegrasyon senaryolarının canlı donanım bağımlılığı olmadan güvenli test edilmesini sağlayan simülasyon ve doğrulama altyapısı.
+            </p>
+            <div class="tag-row">
+              <span class="tag caption-4">POS Simülatörü</span>
+              <span class="tag caption-4">Entegrasyon Testi</span>
+            </div>
+          </article>
+
+          <article class="private-card reveal">
+            <span class="caption-4 private-badge">Yapay Zekâ ve Otomasyon</span>
+            <h3 class="heading-6">AI Arayüzleri ve Veri Otomasyonu</h3>
+            <p class="body-6">
+              Modern TypeScript ve Next.js tabanlı yapay zekâ sohbet arayüzleri, Python tabanlı kurumsal servis veri aktarım araçları ve tekrarlayan geliştirme işlerini hızlandıran kod üretim sistemleri.
+            </p>
+            <div class="tag-row">
+              <span class="tag caption-4">Next.js AI UI</span>
+              <span class="tag caption-4">Veri Dışa Aktarım</span>
+            </div>
+          </article>
+
+          <article class="private-card reveal">
+            <span class="caption-4 private-badge">Sektörel Çözümler</span>
+            <h3 class="heading-6">Takip, Lojistik ve Kurumsal Web</h3>
+            <p class="body-6">
+              Servis takip platformları, dijital kurye operasyon yönetimi, uluslararası öğrenci takip sistemleri, kişisel not uygulamaları ve sektörel kurumsal web projeleri.
+            </p>
+            <div class="tag-row">
+              <span class="tag caption-4">Servis Takibi</span>
+              <span class="tag caption-4">Dijital Kurye</span>
+              <span class="tag caption-4">Web Uygulamaları</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Legal, Privacy Policies & App Verification (Preserved Existing Content) -->
+    <section id="legal" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="caption-3 section-kicker">Yasal Belgeler ve Doğrulama</span>
+          <h2 class="heading-2">Resmi gizlilik politikaları ve uygulama doğrulama</h2>
+          <p class="body-3 section-desc">
+            Muscan Software Factory tarafından geliştirilen mobil uygulamaların mağaza uyumlu gizlilik politikalarına ve reklam doğrulama dosyasına aşağıdan doğrudan erişebilirsiniz.
+          </p>
+        </div>
+
+        <div class="legal-grid">
+          <a href="privacy/chromeblade.html" class="legal-card reveal">
+            <span class="caption-4 legal-card-meta">Gizlilik Politikası · EN</span>
+            <span class="title-2">Chromeblade — Privacy Policy</span>
+            <span class="body-6 legal-card-meta">Chromeblade: 8 Bit Cyber Run veri güvenliği ve gizlilik beyanı.</span>
+          </a>
+
+          <a href="privacy/chromeblade-2.html" class="legal-card reveal">
+            <span class="caption-4 legal-card-meta">Gizlilik Politikası · TR</span>
+            <span class="title-2">Chromeblade 2: Zero Protocol</span>
+            <span class="body-6 legal-card-meta">Chromeblade 2: Zero Protocol resmi gizlilik politikası.</span>
+          </a>
+
+          <a href="privacy/mochi-tower.html" class="legal-card reveal">
+            <span class="caption-4 legal-card-meta">Gizlilik Politikası · EN</span>
+            <span class="title-2">Mochi Tower Climb — Privacy Policy</span>
+            <span class="body-6 legal-card-meta">Mochi Tower Climb (Mochi Kule) gizlilik ve reklam bildirimleri.</span>
+          </a>
+
+          <a href="privacy/minik-dunya.html" class="legal-card reveal">
+            <span class="caption-4 legal-card-meta">Gizlilik Politikası · TR</span>
+            <span class="title-2">Minik Dünya — Gizlilik Politikası</span>
+            <span class="body-6 legal-card-meta">1 ila 4 yaş çocuklar için reklamsız Minik Dünya gizlilik beyanı.</span>
+          </a>
+
+          <a href="app-ads.txt" class="legal-card reveal">
+            <span class="caption-4 legal-card-meta mono">IAB Tech Lab · Doğrulama</span>
+            <span class="title-2 mono">app-ads.txt</span>
+            <span class="body-6 legal-card-meta">Yetkili dijital reklam satıcısı resmi doğrulama dosyası.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Contact CTA -->
+    <section id="contact" class="section section-elevated">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div class="cta-copy">
+            <span class="caption-3 section-kicker">İletişim ve İş Birliği</span>
+            <h2 class="heading-3">Yeni bir proje, iş birliği veya ürün hakkında konuşalım</h2>
+            <p class="body-3">
+              Açık kaynak çalışmalar, Game Factory oyunları veya ticari yazılım çözümleriyle ilgili tüm sorularınız için doğrudan ulaşabilirsiniz.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a href="mailto:muscankaraoglu@gmail.com" class="btn btn-primary button-md">E posta gönder</a>
+            <a href="https://github.com/muscankaraoglu" target="_blank" rel="noopener noreferrer" class="btn btn-secondary button-md">GitHub profilini aç</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="caption-2 footer-copy">© 2026 Muscan Software Factory · Mustafa Can Karaoğlu</p>
+        <ul class="footer-links caption-2">
+          <li><a href="privacy/chromeblade.html">Chromeblade Gizlilik</a></li>
+          <li><a href="privacy/chromeblade-2.html">Chromeblade 2 Gizlilik</a></li>
+          <li><a href="privacy/mochi-tower.html">Mochi Kule Gizlilik</a></li>
+          <li><a href="privacy/minik-dunya.html">Minik Dünya Gizlilik</a></li>
+          <li><a href="app-ads.txt" class="mono">app-ads.txt</a></li>
+          <li><a href="mailto:muscankaraoglu@gmail.com">İletişim</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Screenshot Lightbox Modal -->
+  <dialog id="lightbox-dialog" class="lightbox-dialog" aria-labelledby="lightbox-title">
+    <div class="lightbox-header">
+      <h2 id="lightbox-title" class="title-3">Görsel Önizleme</h2>
+      <button id="lightbox-close" type="button" class="btn btn-secondary button-sm" aria-label="Önizlemeyi kapat">Kapat</button>
+    </div>
+    <img id="lightbox-img" src="" alt="" class="lightbox-img" />
+  </dialog>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
-
