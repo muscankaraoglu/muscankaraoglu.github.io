@@ -1,0 +1,178 @@
+[
+  {
+    "id": "gate-breaker",
+    "title": "Gate Breaker",
+    "genre": "3D Gate Runner",
+    "category": "runner",
+    "description": "Matematik kapılarından geçerek karakterini devasa güçlere dönüştür! MorphForge 3D motoruyla güçlendirilmiş hiper-gündelik koşu oyunu.",
+    "engine": "Phaser 3 + MorphForge",
+    "controls": "Fare / Dokunmatik / Sağ-Sol Oklar",
+    "badge": "Morph 3D",
+    "accent": "#3b82f6",
+    "icon": "⚡",
+    "aspectRatio": "9/16",
+    "playUrl": "https://game-factory-u2c6on64ha-ew.a.run.app/games/gate-breaker/index.html",
+    "storePreview": {
+      "hasAssets": false,
+      "iconUrl": null,
+      "featureGraphicUrl": null,
+      "screenshotCount": 0,
+      "totalImages": 0,
+      "hasMetadata": true
+    }
+  },
+  {
+    "id": "minik-dunya",
+    "title": "Minik Dünya",
+    "genre": "3D Cozy Sandbox",
+    "category": "cozy",
+    "description": "Keşfedilebilir, huzur verici 3D low-poly dünya simülasyonu. Görevler yap, doğayı keşfet ve mini evrenini genişlet.",
+    "engine": "React + Three.js",
+    "controls": "WASD / Yön Tuşları / Dokunmatik",
+    "badge": "Cozy RPG",
+    "accent": "#10b981",
+    "icon": "🌱",
+    "aspectRatio": "16/9",
+    "playUrl": "https://game-factory-u2c6on64ha-ew.a.run.app/games/minik-dunya/index.html",
+    "storePreview": {
+      "hasAssets": true,
+      "iconUrl": "./store-assets/minik-dunya/app-store/icon-1024x1024.png",
+      "featureGraphicUrl": "./store-assets/minik-dunya/google-play/feature-graphic-1024x500.png",
+      "screenshotCount": 56,
+      "totalImages": 71,
+      "hasMetadata": true
+    }
+  },
+  {
+    "id": "mochi-tower",
+    "title": "Mochi Tower Climb",
+    "genre": "Kawaii Physics Arcade",
+    "category": "arcade",
+    "description": "Japon kawaii tatlı kulesi! Birbirinden sevimli mochi tatlılarını mükemmel zamanlamayla üst üste dizerek göğe yükselen dev kuleler inşa et.",
+    "engine": "Phaser 3",
+    "controls": "Tıklama / Dokunmatik Ekran",
+    "badge": "Kawaii",
+    "accent": "#f43f5e",
+    "icon": "🍡",
+    "aspectRatio": "9/16",
+    "playUrl": "https://game-factory-u2c6on64ha-ew.a.run.app/games/mochi-tower/index.html",
+    "storePreview": {
+      "hasAssets": true,
+      "iconUrl": "./store-assets/mochi-tower/app-store/icon-1024x1024.png",
+      "featureGraphicUrl": "./store-assets/mochi-tower/google-play/feature-graphic-1024x500.png",
+      "screenshotCount": 34,
+      "totalImages": 48,
+      "hasMetadata": true
+    }
+  },
+  {
+    "id": "chromeblade",
+    "title": "Chromeblade",
+    "genre": "Synthwave Runner",
+    "category": "runner",
+    "description": "Cyberpunk synthwave atmosferinde 4 şeritli yüksek hızlı sonsuz koşucu. Güçlendiricileri topla, engellerden kaç ve ritmi yakala!",
+    "engine": "Phaser 3",
+    "controls": "Sol/Sağ Oklar veya A/D / Dokunmatik",
+    "badge": "Synthwave",
+    "accent": "#06b6d4",
+    "icon": "🚀",
+    "aspectRatio": "9/16",
+    "playUrl": "https://game-factory-u2c6on64ha-ew.a.run.app/games/chromeblade/index.html",
+    "storePreview": {
+      "hasAssets": true,
+      "iconUrl": "./store-assets/chromeblade/app-store/icon-1024x1024.png",
+      "featureGraphicUrl": "./store-assets/chromeblade/google-play/feature-graphic-1024x500.png",
+      "screenshotCount": 24,
+      "totalImages": 37,
+      "hasMetadata": true
+    }
+  },
+  {
+    "id": "chromeblade-2",
+    "title": "Chromeblade 2: Zero Protocol",
+    "genre": "Cyberpunk Action Runner",
+    "category": "runner",
+    "description": "Genişletilmiş devam macerası! Yeni siber yetenekler, dinamik lazer engelleri, boss mücadeleleri ve yenilenmiş yüksek tempolu elektronik müzikler.",
+    "engine": "Phaser 3",
+    "controls": "Sol/Sağ Oklar / Dokunmatik Kaydırma",
+    "badge": "Overdrive",
+    "accent": "#d946ef",
+    "icon": "🔥",
+    "aspectRatio": "9/16",
+    "playUrl": "https://game-factory-u2c6on64ha-ew.a.run.app/games/chromeblade-2/index.html",
+    "storePreview": {
+      "hasAssets": true,
+      "iconUrl": "./store-assets/chromeblade-2/app-store/icon-1024x1024.png",
+      "featureGraphicUrl": "./store-assets/chromeblade-2/google-play/feature-graphic-1024x500.png",
+      "screenshotCount": 24,
+      "totalImages": 37,
+      "hasMetadata": true
+    }
+  },
+  {
+    "id": "pocket-realm",
+    "title": "Pocket Realm",
+    "genre": "Dynasty Card Strategy",
+    "category": "strategy",
+    "description": "Ortaçağ krallık yönetimi kart oyunu. Kilise, Ordu, Hazine ve Halk dengesini gözeterek hanedanını suikastçılardan koru ve uzun yıllar hükmet.",
+    "engine": "Phaser 3",
+    "controls": "Sağa/Sola Kaydır / Butonlar",
+    "badge": "Kingdom Sim",
+    "accent": "#f59e0b",
+    "icon": "👑",
+    "aspectRatio": "9/16",
+    "playUrl": "https://game-factory-u2c6on64ha-ew.a.run.app/games/pocket-realm/index.html",
+    "storePreview": {
+      "hasAssets": false,
+      "iconUrl": null,
+      "featureGraphicUrl": null,
+      "screenshotCount": 0,
+      "totalImages": 0,
+      "hasMetadata": true
+    }
+  },
+  {
+    "id": "smash-heads",
+    "title": "Smash Heads",
+    "genre": "Physics Ragdoll Brawler",
+    "category": "action",
+    "description": "Kaotik bez bebek fiziklerine sahip kafa kafaya dövüş arenası. Zeki botlara karşı veya aynı cihazda arkadaşınla kıyasıya mücadele et!",
+    "engine": "Phaser 3",
+    "controls": "Zıpla / Kafa At / Çok Oyunculu",
+    "badge": "PvP Brawler",
+    "accent": "#ea580c",
+    "icon": "🥊",
+    "aspectRatio": "16/9",
+    "playUrl": "https://game-factory-u2c6on64ha-ew.a.run.app/games/smash-heads/index.html",
+    "storePreview": {
+      "hasAssets": false,
+      "iconUrl": null,
+      "featureGraphicUrl": null,
+      "screenshotCount": 0,
+      "totalImages": 0,
+      "hasMetadata": true
+    }
+  },
+  {
+    "id": "fatal-strike",
+    "title": "FATAL STRIKE '94",
+    "genre": "Retro Arcade Fighter • Online PvP",
+    "category": "action",
+    "description": "12 eşsiz dövüşçü, yıkılabilir çevre objeleri, ekran çatlatan vuruş hissiyatı, Fatality bitirişleri, arkadaşını davet et ve rastgele online PvP maçları!",
+    "engine": "Phaser 3 + WebSocket",
+    "controls": "Klavye / Gamepad / Dokunmatik",
+    "badge": "ONLINE PvP",
+    "accent": "#f97316",
+    "icon": "🔥",
+    "aspectRatio": "16/9",
+    "playUrl": "https://game-factory-u2c6on64ha-ew.a.run.app/games/fatal-strike/index.html",
+    "storePreview": {
+      "hasAssets": false,
+      "iconUrl": null,
+      "featureGraphicUrl": null,
+      "screenshotCount": 0,
+      "totalImages": 0,
+      "hasMetadata": false
+    }
+  }
+]

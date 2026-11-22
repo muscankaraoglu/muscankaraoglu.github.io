@@ -1,0 +1,281 @@
+{
+  "hasAssets": true,
+  "appStore": {
+    "icon": {
+      "file": "icon-1024x1024.png",
+      "url": "./store-assets/chromeblade-2/app-store/icon-1024x1024.png",
+      "width": 1024,
+      "height": 1024,
+      "orientation": "landscape"
+    },
+    "iphone67": [
+      {
+        "file": "iphone-6.7-screenshot-01-1290x2796.png",
+        "url": "./store-assets/chromeblade-2/app-store/iphone-6.7-screenshot-01-1290x2796.png",
+        "width": 1290,
+        "height": 2796,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.7-screenshot-02-1290x2796.png",
+        "url": "./store-assets/chromeblade-2/app-store/iphone-6.7-screenshot-02-1290x2796.png",
+        "width": 1290,
+        "height": 2796,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.7-screenshot-03-1290x2796.png",
+        "url": "./store-assets/chromeblade-2/app-store/iphone-6.7-screenshot-03-1290x2796.png",
+        "width": 1290,
+        "height": 2796,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.7-screenshot-04-1290x2796.png",
+        "url": "./store-assets/chromeblade-2/app-store/iphone-6.7-screenshot-04-1290x2796.png",
+        "width": 1290,
+        "height": 2796,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.7-screenshot-05-1290x2796.png",
+        "url": "./store-assets/chromeblade-2/app-store/iphone-6.7-screenshot-05-1290x2796.png",
+        "width": 1290,
+        "height": 2796,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.7-screenshot-06-1290x2796.png",
+        "url": "./store-assets/chromeblade-2/app-store/iphone-6.7-screenshot-06-1290x2796.png",
+        "width": 1290,
+        "height": 2796,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.7-screenshot-07-1290x2796.png",
+        "url": "./store-assets/chromeblade-2/app-store/iphone-6.7-screenshot-07-1290x2796.png",
+        "width": 1290,
+        "height": 2796,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.7-screenshot-08-1290x2796.png",
+        "url": "./store-assets/chromeblade-2/app-store/iphone-6.7-screenshot-08-1290x2796.png",
+        "width": 1290,
+        "height": 2796,
+        "orientation": "portrait"
+      }
+    ],
+    "iphone65": [
+      {
+        "file": "iphone-6.5-screenshot-01-1242x2688.png",
+        "url": "./store-assets/chromeblade-2/app-store/iphone-6.5-screenshot-01-1242x2688.png",
+        "width": 1242,
+        "height": 2688,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.5-screenshot-02-1242x2688.png",
+        "url": "./store-assets/chromeblade-2/app-store/iphone-6.5-screenshot-02-1242x2688.png",
+        "width": 1242,
+        "height": 2688,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.5-screenshot-03-1242x2688.png",
+        "url": "./store-assets/chromeblade-2/app-store/iphone-6.5-screenshot-03-1242x2688.png",
+        "width": 1242,
+        "height": 2688,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.5-screenshot-04-1242x2688.png",
+        "url": "./store-assets/chromeblade-2/app-store/iphone-6.5-screenshot-04-1242x2688.png",
+        "width": 1242,
+        "height": 2688,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.5-screenshot-05-1242x2688.png",
+        "url": "./store-assets/chromeblade-2/app-store/iphone-6.5-screenshot-05-1242x2688.png",
+        "width": 1242,
+        "height": 2688,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.5-screenshot-06-1242x2688.png",
+        "url": "./store-assets/chromeblade-2/app-store/iphone-6.5-screenshot-06-1242x2688.png",
+        "width": 1242,
+        "height": 2688,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.5-screenshot-07-1242x2688.png",
+        "url": "./store-assets/chromeblade-2/app-store/iphone-6.5-screenshot-07-1242x2688.png",
+        "width": 1242,
+        "height": 2688,
+        "orientation": "portrait"
+      },
+      {
+        "file": "iphone-6.5-screenshot-08-1242x2688.png",
+        "url": "./store-assets/chromeblade-2/app-store/iphone-6.5-screenshot-08-1242x2688.png",
+        "width": 1242,
+        "height": 2688,
+        "orientation": "portrait"
+      }
+    ],
+    "ipad": [],
+    "other": []
+  },
+  "googlePlay": {
+    "icon": {
+      "file": "icon-512x512.png",
+      "url": "./store-assets/chromeblade-2/google-play/icon-512x512.png",
+      "width": 512,
+      "height": 512,
+      "orientation": "landscape"
+    },
+    "featureGraphic": {
+      "file": "feature-graphic-1024x500.png",
+      "url": "./store-assets/chromeblade-2/google-play/feature-graphic-1024x500.png",
+      "width": 1024,
+      "height": 500,
+      "orientation": "landscape"
+    },
+    "landscape": [],
+    "portrait": [
+      {
+        "file": "screenshot-01-1080x1920.png",
+        "url": "./store-assets/chromeblade-2/google-play/screenshot-01-1080x1920.png",
+        "width": 1080,
+        "height": 1920,
+        "orientation": "portrait"
+      },
+      {
+        "file": "screenshot-02-1080x1920.png",
+        "url": "./store-assets/chromeblade-2/google-play/screenshot-02-1080x1920.png",
+        "width": 1080,
+        "height": 1920,
+        "orientation": "portrait"
+      },
+      {
+        "file": "screenshot-03-1080x1920.png",
+        "url": "./store-assets/chromeblade-2/google-play/screenshot-03-1080x1920.png",
+        "width": 1080,
+        "height": 1920,
+        "orientation": "portrait"
+      },
+      {
+        "file": "screenshot-04-1080x1920.png",
+        "url": "./store-assets/chromeblade-2/google-play/screenshot-04-1080x1920.png",
+        "width": 1080,
+        "height": 1920,
+        "orientation": "portrait"
+      },
+      {
+        "file": "screenshot-05-1080x1920.png",
+        "url": "./store-assets/chromeblade-2/google-play/screenshot-05-1080x1920.png",
+        "width": 1080,
+        "height": 1920,
+        "orientation": "portrait"
+      },
+      {
+        "file": "screenshot-06-1080x1920.png",
+        "url": "./store-assets/chromeblade-2/google-play/screenshot-06-1080x1920.png",
+        "width": 1080,
+        "height": 1920,
+        "orientation": "portrait"
+      },
+      {
+        "file": "screenshot-07-1080x1920.png",
+        "url": "./store-assets/chromeblade-2/google-play/screenshot-07-1080x1920.png",
+        "width": 1080,
+        "height": 1920,
+        "orientation": "portrait"
+      },
+      {
+        "file": "screenshot-08-1080x1920.png",
+        "url": "./store-assets/chromeblade-2/google-play/screenshot-08-1080x1920.png",
+        "width": 1080,
+        "height": 1920,
+        "orientation": "portrait"
+      }
+    ]
+  },
+  "rawGameplay": [
+    {
+      "file": "clean_horizon_bg-720x1280.png",
+      "url": "./store-assets/chromeblade-2/raw-gameplay/clean_horizon_bg-720x1280.png",
+      "width": 720,
+      "height": 1280,
+      "orientation": "portrait"
+    },
+    {
+      "file": "gameplay_obstacles_levelup-720x1280.png",
+      "url": "./store-assets/chromeblade-2/raw-gameplay/gameplay_obstacles_levelup-720x1280.png",
+      "width": 720,
+      "height": 1280,
+      "orientation": "portrait"
+    },
+    {
+      "file": "gameplay_world10_omega-720x1280.png",
+      "url": "./store-assets/chromeblade-2/raw-gameplay/gameplay_world10_omega-720x1280.png",
+      "width": 720,
+      "height": 1280,
+      "orientation": "portrait"
+    },
+    {
+      "file": "gameplay_world1_coral-720x1280.png",
+      "url": "./store-assets/chromeblade-2/raw-gameplay/gameplay_world1_coral-720x1280.png",
+      "width": 720,
+      "height": 1280,
+      "orientation": "portrait"
+    },
+    {
+      "file": "gameplay_world3_powers-720x1280.png",
+      "url": "./store-assets/chromeblade-2/raw-gameplay/gameplay_world3_powers-720x1280.png",
+      "width": 720,
+      "height": 1280,
+      "orientation": "portrait"
+    },
+    {
+      "file": "gameplay_world8_olympus-720x1280.png",
+      "url": "./store-assets/chromeblade-2/raw-gameplay/gameplay_world8_olympus-720x1280.png",
+      "width": 720,
+      "height": 1280,
+      "orientation": "portrait"
+    },
+    {
+      "file": "menu_launch_deck-720x1280.png",
+      "url": "./store-assets/chromeblade-2/raw-gameplay/menu_launch_deck-720x1280.png",
+      "width": 720,
+      "height": 1280,
+      "orientation": "portrait"
+    },
+    {
+      "file": "menu_worlds_radar-720x1280.png",
+      "url": "./store-assets/chromeblade-2/raw-gameplay/menu_worlds_radar-720x1280.png",
+      "width": 720,
+      "height": 1280,
+      "orientation": "portrait"
+    },
+    {
+      "file": "splash-720x1280.png",
+      "url": "./store-assets/chromeblade-2/raw-gameplay/splash-720x1280.png",
+      "width": 720,
+      "height": 1280,
+      "orientation": "portrait"
+    },
+    {
+      "file": "store_upgrades-720x1280.png",
+      "url": "./store-assets/chromeblade-2/raw-gameplay/store_upgrades-720x1280.png",
+      "width": 720,
+      "height": 1280,
+      "orientation": "portrait"
+    }
+  ],
+  "metadataMarkdown": "# 📱 Chromeblade 2: Zero Protocol — Google Play & App Store Metadata (TR + EN)\n\n---\n\n## 🇹🇷 TÜRKÇE MAĞAZA METİNLERİ (Google Play & App Store)\n\n* **Uygulama Adı (Max 30 karakter):** `Chromeblade 2: Zero Protocol`\n* **App Store Alt Başlık (Max 30 karakter):** `Retro Arcade Koşucu & Güçler`\n* **Google Play Kısa Açıklama (Max 80 karakter):** `10 siber dünya, 8 koşucu, 5 güçlendirme ve çok şeritli hiper arcade heyecanı!`\n* **App Store Anahtar Kelimeler (Max 100 karakter):** `arcade,siber,koşu,runner,neon,retro,hız,3d,engeller,altın,elmas,offline,oyun,yarış,jetpack`\n\n### Tam Açıklama (TR)\n```text\nCHROMEBLADE 2: ZERO PROTOCOL ile yeni nesil yüksek tempolu retro arcade koşu heyecanına katıl!\nGeliştirilmiş sahte-3D perspektif motoru, 10 nefes kesici canlı dünya, açılabilir 8 siber koşucu ve seviye atladıkça keşfedilen 5 efsanevi güçlendirme seni bekliyor!\n\nCoral Sunset Drive'dan Cobalt Metropolis'e, Emerald Bio-Dome'dan Solar Canyon'a ve efsanevi Omega Prism Core'a kadar çok şeritli siber otoyollarda reflekslerini sına!\n\n🔥 ÖNE ÇIKAN OYUN ÖZELLİKLERİ:\n• 10 Canlı ve Renkli 3D Dünya: Asla tekdüze karanlık yok! Gündüz ışığı, kanyon güneşi, arktik buzullar ve siber şafak temalı 10 benzersiz dünya.\n• Dinamik Şerit Genişlemeleri & Olaylar: 2, 3 ve 4 şeritli yol geçişleri, Lazer Kilitleri, Termal Vuruş Bölgeleri, Enerji Barikatları ve Turbo Hız Pedleri ile durmaksızın değişen aksiyon!\n• Aşamalı Güçlendirme Sistemi:\n  - AEGIS KALKANI (Lv.1): Engelleri saptıran altıgen koruma kubbesi.\n  - MIKNATIS 2X (Lv.2): Tüm şeritlerdeki altınları kendine çeker ve 2 kat skor verir!\n  - HİPER BOOST (Lv.3): Süpersonik yeşil alevle önüne çıkan tüm engelleri parçalayarak geç!\n  - KRONO ZAMAN (Lv.5): Zamanı ve engelleri yavaşlatır, 1.5 kat skor çarpanı kazandırır!\n  - EMP NOVA (Lv.7): Ekrandaki tüm tehlikeleri tek şok dalgasıyla saf altına dönüştürür!\n• 8 Ayrıcalıklı Siber Koşucu & Özel İzler: Cyber Valkyrie, Shadow Ronin, Volt Titan, Plasma Phantom, Solar Seraph, Hyper Viper, Frost Warden ve Inferno Reaper arasından tarzını seç, özel neon izleriyle parılda!\n• Donanım ve Zırh Geliştirmeleri: Titanyum Gövde (+can), Mıknatıs Çekirdeği, Otomatik Başlangıç Kalkanı ve Şans Çipi ile koşucunu durdurulamaz yap!\n• Günlük Giriş Ödülleri & Görevler: Her gün giriş yaparak ücretsiz altın ve değerli elmasları topla!\n• %100 Çevrimdışı (Offline) Oynanabilir: İnternet bağlantın olmasa bile akıcı 60 FPS arcade deneyimi daima cebinde!\n\nHemen indir, gaza bas ve Neon Evreni'nin zirvesine adını yazdır!\n```\n\n---\n\n## 🇺🇸 ENGLISH STORE METADATA (Google Play & App Store)\n\n* **App Name (Max 30 chars):** `Chromeblade 2: Zero Protocol`\n* **App Store Subtitle (Max 30 chars):** `Retro Arcade Runner & Powers`\n* **Google Play Short Description (Max 80 chars):** `10 vibrant 3D worlds, 8 cyber runners, 5 power-ups & multi-lane retro arcade action!`\n* **App Store Keywords (Max 100 chars):** `arcade,runner,cyberpunk,neon,retro,dodge,speed,3d,highway,powerups,coins,offline,jetpack,racing`\n\n### Full Description (EN)\n```text\nBlast into high-velocity arcade action with CHROMEBLADE 2: Zero Protocol!\nPowered by an enhanced pseudo-3D perspective engine, experience 10 breathtaking panoramic worlds, 8 unlockable cyber runners, and 5 progressive power-ups discovered as you level up!\n\nDash from Coral Sunset Drive and Cobalt Metropolis to Emerald Bio-Domes, Solar Canyon, and the climactic Omega Prism Core!\n\n🔥 KEY FEATURES:\n• 10 Diverse Panoramic 3D Worlds: Zero monotonous darkness! Dash through sunlit canyons, rose-dawn citadels, arctic passes, and chromatic neon skylines.\n• Expanding Multi-Lane Highways: Seamless dynamic lane shifts (2, 3, and 4 lanes), Laser Lockdowns, Thermal Strike Zones, Energy Barricades, and Turbo Speed Pads keep every second unpredictable!\n• Progressive Power-Up Discovery:\n  - AEGIS BARRIER (Lv.1): Hexagonal energy dome deflects oncoming hazards.\n  - MAGNET 2X (Lv.2): Pulls gold coins across all lanes with double score multiplier!\n  - HYPER BOOST (Lv.3): Rocket forward with emerald thrusters and smash hazards effortlessly!\n  - CHRONO WARP (Lv.5): Warps time to slow obstacles while awarding 1.5X precision points!\n  - EMP NOVA (Lv.7): Vaporizes all threats on screen into golden coins in a blinding flash!\n• 8 Playable Cyber Heroes & Particle Trails: Pilot Cyber Valkyrie, Shadow Ronin, Volt Titan, Plasma Phantom, Solar Seraph, Hyper Viper, Frost Warden, and Inferno Reaper!\n• Permanent Armor Upgrades: Enhance Titanium Hull (+max lives), Magnet Cores, Fortune Chips (2X gold chance), and Auto-Barrier rigs!\n• Daily Login Gifts & Streaks: Claim free coins and valuable diamonds every day to accelerate your hangar progress!\n• 100% Offline Playable: Pure 60 FPS retro chiptune arcade excitement wherever you go — no Wi-Fi required!\n\nDownload CHROMEBLADE 2: ZERO PROTOCOL now and master the cyber highway!\n```\n\n---\n\n## 💎 In-App Purchase (IAP) SKU Tablosu (Google Play & App Store Connect)\n\n| SKU / Product ID | Tip | Başlık (EN) | Başlık (TR) | Miktar | Fiyat (Önerilen) |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| `com.muscansoftwarefactory.chromeblade2.diamonds_100` | Consumable | Starter Pouch | Başlangıç Kesesi | 100 Elmas | ₺29.99 / $0.99 |\n| `com.muscansoftwarefactory.chromeblade2.diamonds_350` | Consumable | Cyber Cache (+15%) | Siber Kasa (+15%) | 350 Elmas | ₺79.99 / $2.99 |\n| `com.muscansoftwarefactory.chromeblade2.diamonds_1000` | Consumable | Neon Vault (+30%) | Neon Mahzen (+30%) | 1000 Elmas | ₺179.99 / $5.99 |\n| `com.muscansoftwarefactory.chromeblade2.diamonds_3000` | Consumable | Singularity Chest (+50%) | Tekillik Sandığı (+50%) | 3000 Elmas | ₺399.99 / $14.99 |\n\n---\n\n## 🛡️ Google Play Data Safety & App Store Privacy Form Beyanı\n\n* **Veri Toplama:** Yalnızca üçüncü parti reklam SDK'sı (Google AdMob) çerçevesinde gerçekleşir.\n* **Toplanan / Paylaşılan Veri Türleri:** \n  - Cihaz ve Tanımlayıcılar (Reklam Kimliği / GAID / IDFA)\n  - Yaklaşık Konum (IP üzerinden genel bölge/ülke tespiti)\n  - Tanılama ve Performans (Çökme günlükleri, ANR verileri)\n* **Kullanıcı Hesabı & Kişisel Veri:** Toplanmaz (üye olma, telefon, e-posta, rehber, kamera veya mikrofon izni yoktur).\n* **Ödeme Bilgileri:** Uygulama asla kredi kartı bilgisi tutmaz; tüm işlemler Google Play Billing ve Apple In-App Purchase güvenli altyapısında yürütülür.\n* **Şifreleme:** Aktarım sırasındaki tüm veriler HTTPS/TLS ile uçtan uca şifrelenir.\n* **Yaş Derecelendirmesi (IARC / PEGI):** Her Yaş İçin Uygun (PEGI 3 / ESRB Everyone) - çizgi/retro arcade temalıdır, kan veya şiddet içermez.\n",
+  "checklistMarkdown": "# 🚀 CHROMEBLADE 2: ZERO PROTOCOL — GOOGLE PLAY & APP STORE YAYINLAMA REHBERİ\n\nBu kılavuz, **Chromeblade 2: Zero Protocol** oyununu Android (Google Play Store) ve iOS (Apple App Store) mağazalarında sorunsuz ve eksiksiz bir şekilde yayınlaman için gereken tüm adımları içermektedir.\n\n---\n\n## 📁 1. Hazırlanan Mağaza Varlıkları (Store Assets)\n\nTüm mağaza görsel ve metinleri `games/chromeblade-2/store-assets/` dizininde **doğrudan canlı oyun motorundan (Phaser 3 Canvas & Hi-Bit Procedural Art Engine)** alınmış gerçek oynanış kareleriyle ve tam standart ölçülerde üretilmiştir:\n\n### 🤖 Google Play Store Paketi (`store-assets/google-play/`)\n* **Uygulama İkonu:** `icon-512x512.png` (512x512 PNG, 32-bit RGB, gerçek oyun içi Hi-Bit Cyber Valkyrie, Aegis Hex Kalkanı, Coral Sunset ufku ve Krom Chromeblade 2: Zero Protocol logosu)\n* **Öne Çıkan Görsel (Feature Graphic):** `feature-graphic-1024x500.png` (1024x500 PNG, gerçek oyun içi ekranlar ve 4 Hi-Bit karakter kadrosu)\n* **8 Adet Gerçek Oynanış Ekran Görüntüsü (Screenshots — 1080x1920):**\n  - `screenshot-01-1080x1920.png` — **World 1: Coral Sunset Drive** (Cyber Valkyrie, Turbo Pad, Cyber Skull engelleri ve altın dizisi)\n  - `screenshot-02-1080x1920.png` — **World 3: Emerald Bio-Dome** (5 Aşamalı Güçlendirme: Aegis Hex Kalkanı, Magnet 2X Yıldırım Çekimi, Chrono küreleri)\n  - `screenshot-03-1080x1920.png` — **World 8: Golden Olympus** (4 Şeritli Gökyüzü Otoyolu, Hyper Boost yeşil plazma alevi, Red Laser Lockdown ışını ve dönen testereler)\n  - `screenshot-04-1080x1920.png` — **Zıpla, Kay & Seviye Atla** (Alçak bariyerler, üst lazer kapıları ve anlık Level-Up ödül kutlaması)\n  - `screenshot-05-1080x1920.png` — **World 10: Omega Prism Core** (4 Şeritli Final Dünyası, Termal Vuruş Bölgeleri, EMP Nova ve yüksek hız aksiyonu)\n  - `screenshot-06-1080x1920.png` — **Holo-Launch Deck & 8 Siber Koşucu** (3D Holografik Podyum, karakter istatistik barları ve 8 karakterlik arcade seçim ekranı)\n  - `screenshot-07-1080x1920.png` — **10 Panoramik Dünya Radarı** (10 benzersiz biyom ve şerit yapısını gösteren oyun içi sektör seçim ekranı)\n  - `screenshot-08-1080x1920.png` — **Cyber Armory & Donanım Geliştirmeleri** (Titanium Hull, Magnet Core, Aegis Capacitor, Nitro Thrusters, Fortune Chip, Auto-Barrier Rig)\n\n### 🍎 Apple App Store Paketi (`store-assets/app-store/`)\n* **App Store İkonu:** `icon-1024x1024.png` (1024x1024 PNG, alfa kanalsız RGB)\n* **iPhone 6.5\" Ekran Görüntüleri (8 Adet):** `iphone-6.5-screenshot-01-1242x2688.png` .. `08` (1242x2688)\n* **iPhone 6.7\" Ekran Görüntüleri (8 Adet):** `iphone-6.7-screenshot-01-1290x2796.png` .. `08` (1290x2796)\n\n### 🎮 Ham Oyun İçi Ekran Görüntüleri (`store-assets/raw-gameplay/`)\n* Çerçevesiz, doğrudan `720x1280` oyun canvas'ından yakalanmış 10 adet saf oynanış görseli (`gameplay_world1_coral`, `gameplay_world3_powers`, `gameplay_world8_olympus`, `gameplay_obstacles_levelup`, `gameplay_world10_omega`, `menu_launch_deck`, `menu_worlds_radar`, `store_upgrades`, `splash`, `clean_horizon_bg`).\n\n### 📱 Native Android & iOS Proje İkonları ve Splash Ekranları\n* **Android (`android/app/src/main/res/`):** Tüm `mipmap-mdpi` .. `mipmap-xxxhdpi` (`ic_launcher.png`, `ic_launcher_round.png`, `ic_launcher_foreground.png`) ve tüm dikey/yatay `drawable-*/splash.png` dosyaları gerçek Chromeblade 2: Zero Protocol görselleriyle güncellenmiştir (varsayılan Capacitor şablon ikonları tamamen kaldırılmıştır).\n* **iOS (`ios/App/App/Assets.xcassets/`):** `AppIcon-512@2x.png` (1024x1024) ve `Splash.imageset` (`2732x2732`) görselleri gerçek oyun varlıklarıyla güncellenmiştir.\n\n### 📝 Dokümanlar & Politikalar\n* **Mağaza Metinleri (TR & EN):** `store-assets/store-metadata.md`\n* **Gizlilik Sözleşmesi (Privacy Policy):** `store-assets/privacy-policy.html`\n* **AdMob Reklam Doğrulama Dosyası:** `store-assets/app-ads.txt`\n\n---\n\n## 🤖 2. ANDROID (GOOGLE PLAY) YAYINLAMA ADIMLARI\n\n### Adım 2.1: Projeyi Derleme ve Senkronizasyon\nTerminalde `games/chromeblade-2` klasörüne gidip web derlemesini native Android katmanına aktarın:\n```bash\ncd games/chromeblade-2\nnpm run build\nnpx cap sync android\n```\n\n### Adım 2.2: Android Studio'da Açma ve İmzalı AAB (Android App Bundle) Üretimi\n1. Projeyi Android Studio ile açın:\n   ```bash\n   npx cap open android\n   ```\n2. Android Studio menüsünden **Build > Generate Signed Bundle / APK...** seçeneğini tıklayın.\n3. **Android App Bundle (.aab)** seçeneğini işaretleyip **Next** deyin.\n4. Bir **Keystore** (Anahtar Deposu) oluşturun veya var olan anahtarınızı seçin. *(Bu `.jks` dosyasını ve şifrelerinizi asla kaybetmeyin!)*\n5. Build Type olarak **release** seçin ve **Finish** düğmesine basın.\n6. Çıktı dosyası `android/app/release/app-release.aab` yolunda hazır olacaktır.\n\n### Adım 2.3: Google Play Console İşlemleri\n1. [Google Play Console](https://play.google.com/console) paneline giriş yapın ve **Uygulama Oluştur** (Create App) deyin.\n   - **Uygulama Adı:** `Chromeblade 2: Zero Protocol`\n   - **Varsayılan Dil:** Türkçe (tr-TR)\n   - **Uygulama Türü:** Oyun (Game) / Ücretsiz (Free)\n2. **Ana Mağaza Girişi (Main Store Listing):**\n   - `store-metadata.md` dosyasındaki Türkçe Başlık, Kısa Açıklama ve Tam Açıklama metinlerini yapıştırın.\n   - `icon-512x512.png` dosyasını Simge alanına yükleyin.\n   - `feature-graphic-1024x500.png` dosyasını Öne Çıkan Grafik alanına yükleyin.\n   - Telefon Ekran Görüntüleri alanına `screenshot-01` .. `04` (1080x1920) görsellerini yükleyin.\n   - (Opsiyonel) Çeviri ekle diyerek İngilizce (en-US) başlık ve açıklamaları girin.\n3. **Uygulama İçeriği & Veri Güvenliği (Data Safety):**\n   - **Gizlilik Politikası:** `privacy-policy.html` sayfanızı web sitenize veya GitHub Pages'e yükleyip linkini verin.\n   - **Reklamlar:** \"Evet, uygulamam reklam içeriyor\" seçeneğini işaretleyin.\n   - **Veri Güvenliği Formu:** Cihaz Kimlikleri (Reklam Kimliği) ve Tanılama verileri AdMob tarafından toplanıyor şeklinde işaretleyin.\n   - **Hedef Kitle ve İçerik:** 13 yaş ve üzeri (veya genel kitle) olarak IARC anketini tamamlayın (PEGI 3 alır).\n4. **Sürüm Yayınlama:**\n   - Sol menüden **Üretim (Production)** sekmesine geçin.\n   - **Yeni Sürüm Oluştur** deyin ve ürettiğiniz `app-release.aab` dosyasını yükleyin.\n   - İncelemeye Gönder (Send for Review) butonuna tıklayın.\n\n---\n\n## 🍎 3. iOS (APPLE APP STORE) YAYINLAMA ADIMLARI\n\n*(Not: Apple için macOS ve Xcode gerekmektedir)*\n\n### Adım 3.1: Projeyi Senkronize Etme ve Xcode'da Açma\n```bash\ncd games/chromeblade-2\nnpm run build\nnpx cap sync ios\nnpx cap open ios\n```\n\n### Adım 3.2: Xcode Yapılandırması & Sertifikalar\n1. Xcode içinde sol üstteki **App** projesine tıklayın.\n2. **Signing & Capabilities** sekmesine gelin:\n   - **Team:** Apple Developer Geliştirici Hesabınızı seçin.\n   - **Bundle Identifier:** `com.muscansoftwarefactory.chromeblade2` olarak teyit edin.\n3. Cihaz hedefi olarak **Any iOS Device (arm64)** seçin.\n4. Menüden **Product > Archive** seçeneğine basarak derlemeyi başlatın.\n5. Archive penceresinde **Distribute App > App Store Connect > Upload** adımlarını izleyerek ikili dosyayı Apple sunucularına yükleyin.\n\n### Adım 3.3: App Store Connect İşlemleri\n1. [App Store Connect](https://appstoreconnect.apple.com) sitesine gidin ve **+ Yeni Uygulama** deyin.\n   - **Ad:** `Chromeblade 2: Zero Protocol`\n   - **Bundle ID:** `com.muscansoftwarefactory.chromeblade2`\n   - **SKU:** `chromeblade-2-ios`\n2. **Uygulama Bilgileri:**\n   - Kategori: Oyunlar / Arcade & Aksiyon\n   - Alt Başlık: `Retro Arcade Koşucu & Güçler`\n   - Anahtar Kelimeler: `arcade,siber,koşu,runner,neon,retro,hız,3d,engeller,altın,elmas,offline,oyun,yarış,jetpack`\n3. **Ekran Görüntüleri ve İkon:**\n   - **6.5\" Display:** `iphone-6.5-screenshot-01` .. `04` yükleyin.\n   - **6.7\" Display:** `iphone-6.7-screenshot-01` .. `04` yükleyin.\n   - Genel simge Xcode build arşivinden otomatik okunacaktır (yedek olarak `icon-1024x1024.png` mevcuttur).\n4. **Uygulama İçi Satın Alımlar (In-App Purchases):**\n   - `store-metadata.md` içerisindeki 4 adet Tüketilebilir (Consumable) Elmas paketini Product ID'leriyle ekleyin (`diamonds_100`, `diamonds_350`, `diamonds_1000`, `diamonds_3000`).\n5. **Derleme Seçimi & İnceleme:**\n   - Xcode'dan yüklediğiniz build hazır olunca seçin.\n   - **İncelemeye Gönder** (Submit for Review) butonuna tıklayın.\n\n---\n\n## 💰 4. AdMob Reklam Entegrasyonu & app-ads.txt\n\n1. [Google AdMob](https://admob.google.com) hesabınızda Android ve iOS için 2 ayrı uygulama kaydı açın.\n2. Banner, Interstitial (Geçiş) ve Rewarded (Ödüllü) reklam birim kimliklerini (Ad Unit ID) alın.\n3. Aldığınız ID'leri `games/chromeblade-2/src/config/adConfig.js` dosyasına tanımlayın.\n4. Web sitenizin kök dizinine (örnek: `https://muscansoftware.com/app-ads.txt`) hazırladığımız `app-ads.txt` dosyasını yükleyin.\n\nTebrikler! Oyununuz tüm mağaza kurallarına tam uyumlu ve lansmana hazır! 🚀\n",
+  "privacyPolicyUrl": "./store-assets/chromeblade-2/privacy-policy.html",
+  "totalImages": 37
+}

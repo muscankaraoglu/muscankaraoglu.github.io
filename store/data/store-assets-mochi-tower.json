@@ -1,0 +1,359 @@
+{
+  "hasAssets": true,
+  "appStore": {
+    "icon": {
+      "file": "icon-1024x1024.png",
+      "url": "./store-assets/mochi-tower/app-store/icon-1024x1024.png",
+      "width": 1024,
+      "height": 1024,
+      "orientation": "landscape"
+    },
+    "iphone67": [
+      {
+        "file": "iphone-6.7-screenshot-01-climb-2796x1290.png",
+        "url": "./store-assets/mochi-tower/app-store/iphone-6.7-screenshot-01-climb-2796x1290.png",
+        "width": 2796,
+        "height": 1290,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.7-screenshot-02-summit-rescue-2796x1290.png",
+        "url": "./store-assets/mochi-tower/app-store/iphone-6.7-screenshot-02-summit-rescue-2796x1290.png",
+        "width": 2796,
+        "height": 1290,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.7-screenshot-03-celebration-2796x1290.png",
+        "url": "./store-assets/mochi-tower/app-store/iphone-6.7-screenshot-03-celebration-2796x1290.png",
+        "width": 2796,
+        "height": 1290,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.7-screenshot-04-safety-net-2796x1290.png",
+        "url": "./store-assets/mochi-tower/app-store/iphone-6.7-screenshot-04-safety-net-2796x1290.png",
+        "width": 2796,
+        "height": 1290,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.7-screenshot-05-lavender-windmills-2796x1290.png",
+        "url": "./store-assets/mochi-tower/app-store/iphone-6.7-screenshot-05-lavender-windmills-2796x1290.png",
+        "width": 2796,
+        "height": 1290,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.7-screenshot-06-rainbow-palace-2796x1290.png",
+        "url": "./store-assets/mochi-tower/app-store/iphone-6.7-screenshot-06-rainbow-palace-2796x1290.png",
+        "width": 2796,
+        "height": 1290,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.7-screenshot-07-sakura-endless-2796x1290.png",
+        "url": "./store-assets/mochi-tower/app-store/iphone-6.7-screenshot-07-sakura-endless-2796x1290.png",
+        "width": 2796,
+        "height": 1290,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.7-screenshot-08-pet-garden-2796x1290.png",
+        "url": "./store-assets/mochi-tower/app-store/iphone-6.7-screenshot-08-pet-garden-2796x1290.png",
+        "width": 2796,
+        "height": 1290,
+        "orientation": "landscape"
+      }
+    ],
+    "iphone65": [
+      {
+        "file": "iphone-6.5-screenshot-01-climb-2688x1242.png",
+        "url": "./store-assets/mochi-tower/app-store/iphone-6.5-screenshot-01-climb-2688x1242.png",
+        "width": 2688,
+        "height": 1242,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.5-screenshot-02-summit-rescue-2688x1242.png",
+        "url": "./store-assets/mochi-tower/app-store/iphone-6.5-screenshot-02-summit-rescue-2688x1242.png",
+        "width": 2688,
+        "height": 1242,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.5-screenshot-03-celebration-2688x1242.png",
+        "url": "./store-assets/mochi-tower/app-store/iphone-6.5-screenshot-03-celebration-2688x1242.png",
+        "width": 2688,
+        "height": 1242,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.5-screenshot-04-safety-net-2688x1242.png",
+        "url": "./store-assets/mochi-tower/app-store/iphone-6.5-screenshot-04-safety-net-2688x1242.png",
+        "width": 2688,
+        "height": 1242,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.5-screenshot-05-lavender-windmills-2688x1242.png",
+        "url": "./store-assets/mochi-tower/app-store/iphone-6.5-screenshot-05-lavender-windmills-2688x1242.png",
+        "width": 2688,
+        "height": 1242,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.5-screenshot-06-rainbow-palace-2688x1242.png",
+        "url": "./store-assets/mochi-tower/app-store/iphone-6.5-screenshot-06-rainbow-palace-2688x1242.png",
+        "width": 2688,
+        "height": 1242,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.5-screenshot-07-sakura-endless-2688x1242.png",
+        "url": "./store-assets/mochi-tower/app-store/iphone-6.5-screenshot-07-sakura-endless-2688x1242.png",
+        "width": 2688,
+        "height": 1242,
+        "orientation": "landscape"
+      },
+      {
+        "file": "iphone-6.5-screenshot-08-pet-garden-2688x1242.png",
+        "url": "./store-assets/mochi-tower/app-store/iphone-6.5-screenshot-08-pet-garden-2688x1242.png",
+        "width": 2688,
+        "height": 1242,
+        "orientation": "landscape"
+      }
+    ],
+    "ipad": [
+      {
+        "file": "ipad-13-screenshot-01-climb-2732x2048.png",
+        "url": "./store-assets/mochi-tower/app-store/ipad-13-screenshot-01-climb-2732x2048.png",
+        "width": 2732,
+        "height": 2048,
+        "orientation": "landscape"
+      },
+      {
+        "file": "ipad-13-screenshot-02-summit-rescue-2732x2048.png",
+        "url": "./store-assets/mochi-tower/app-store/ipad-13-screenshot-02-summit-rescue-2732x2048.png",
+        "width": 2732,
+        "height": 2048,
+        "orientation": "landscape"
+      },
+      {
+        "file": "ipad-13-screenshot-03-celebration-2732x2048.png",
+        "url": "./store-assets/mochi-tower/app-store/ipad-13-screenshot-03-celebration-2732x2048.png",
+        "width": 2732,
+        "height": 2048,
+        "orientation": "landscape"
+      },
+      {
+        "file": "ipad-13-screenshot-04-safety-net-2732x2048.png",
+        "url": "./store-assets/mochi-tower/app-store/ipad-13-screenshot-04-safety-net-2732x2048.png",
+        "width": 2732,
+        "height": 2048,
+        "orientation": "landscape"
+      },
+      {
+        "file": "ipad-13-screenshot-05-lavender-windmills-2732x2048.png",
+        "url": "./store-assets/mochi-tower/app-store/ipad-13-screenshot-05-lavender-windmills-2732x2048.png",
+        "width": 2732,
+        "height": 2048,
+        "orientation": "landscape"
+      },
+      {
+        "file": "ipad-13-screenshot-06-rainbow-palace-2732x2048.png",
+        "url": "./store-assets/mochi-tower/app-store/ipad-13-screenshot-06-rainbow-palace-2732x2048.png",
+        "width": 2732,
+        "height": 2048,
+        "orientation": "landscape"
+      },
+      {
+        "file": "ipad-13-screenshot-07-sakura-endless-2732x2048.png",
+        "url": "./store-assets/mochi-tower/app-store/ipad-13-screenshot-07-sakura-endless-2732x2048.png",
+        "width": 2732,
+        "height": 2048,
+        "orientation": "landscape"
+      },
+      {
+        "file": "ipad-13-screenshot-08-pet-garden-2732x2048.png",
+        "url": "./store-assets/mochi-tower/app-store/ipad-13-screenshot-08-pet-garden-2732x2048.png",
+        "width": 2732,
+        "height": 2048,
+        "orientation": "landscape"
+      }
+    ],
+    "other": []
+  },
+  "googlePlay": {
+    "icon": {
+      "file": "icon-512x512.png",
+      "url": "./store-assets/mochi-tower/google-play/icon-512x512.png",
+      "width": 512,
+      "height": 512,
+      "orientation": "landscape"
+    },
+    "featureGraphic": {
+      "file": "feature-graphic-1024x500.png",
+      "url": "./store-assets/mochi-tower/google-play/feature-graphic-1024x500.png",
+      "width": 1024,
+      "height": 500,
+      "orientation": "landscape"
+    },
+    "landscape": [
+      {
+        "file": "screenshot-01-climb-1920x1080.png",
+        "url": "./store-assets/mochi-tower/google-play/screenshot-01-climb-1920x1080.png",
+        "width": 1920,
+        "height": 1080,
+        "orientation": "landscape"
+      },
+      {
+        "file": "screenshot-02-summit-rescue-1920x1080.png",
+        "url": "./store-assets/mochi-tower/google-play/screenshot-02-summit-rescue-1920x1080.png",
+        "width": 1920,
+        "height": 1080,
+        "orientation": "landscape"
+      },
+      {
+        "file": "screenshot-03-celebration-1920x1080.png",
+        "url": "./store-assets/mochi-tower/google-play/screenshot-03-celebration-1920x1080.png",
+        "width": 1920,
+        "height": 1080,
+        "orientation": "landscape"
+      },
+      {
+        "file": "screenshot-04-safety-net-1920x1080.png",
+        "url": "./store-assets/mochi-tower/google-play/screenshot-04-safety-net-1920x1080.png",
+        "width": 1920,
+        "height": 1080,
+        "orientation": "landscape"
+      },
+      {
+        "file": "screenshot-05-lavender-windmills-1920x1080.png",
+        "url": "./store-assets/mochi-tower/google-play/screenshot-05-lavender-windmills-1920x1080.png",
+        "width": 1920,
+        "height": 1080,
+        "orientation": "landscape"
+      },
+      {
+        "file": "screenshot-06-rainbow-palace-1920x1080.png",
+        "url": "./store-assets/mochi-tower/google-play/screenshot-06-rainbow-palace-1920x1080.png",
+        "width": 1920,
+        "height": 1080,
+        "orientation": "landscape"
+      },
+      {
+        "file": "screenshot-07-sakura-endless-1920x1080.png",
+        "url": "./store-assets/mochi-tower/google-play/screenshot-07-sakura-endless-1920x1080.png",
+        "width": 1920,
+        "height": 1080,
+        "orientation": "landscape"
+      },
+      {
+        "file": "screenshot-08-pet-garden-1920x1080.png",
+        "url": "./store-assets/mochi-tower/google-play/screenshot-08-pet-garden-1920x1080.png",
+        "width": 1920,
+        "height": 1080,
+        "orientation": "landscape"
+      },
+      {
+        "file": "screenshot-09-turkish-menu-1920x1080.png",
+        "url": "./store-assets/mochi-tower/google-play/screenshot-09-turkish-menu-1920x1080.png",
+        "width": 1920,
+        "height": 1080,
+        "orientation": "landscape"
+      },
+      {
+        "file": "screenshot-10-turkish-climb-1920x1080.png",
+        "url": "./store-assets/mochi-tower/google-play/screenshot-10-turkish-climb-1920x1080.png",
+        "width": 1920,
+        "height": 1080,
+        "orientation": "landscape"
+      }
+    ],
+    "portrait": []
+  },
+  "rawGameplay": [
+    {
+      "file": "feature-backdrop-3d-1024x500.png",
+      "url": "./store-assets/mochi-tower/raw-gameplay/feature-backdrop-3d-1024x500.png",
+      "width": 1024,
+      "height": 500,
+      "orientation": "landscape"
+    },
+    {
+      "file": "raw-01-climb-1920x1080.png",
+      "url": "./store-assets/mochi-tower/raw-gameplay/raw-01-climb-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape"
+    },
+    {
+      "file": "raw-02-summit-rescue-1920x1080.png",
+      "url": "./store-assets/mochi-tower/raw-gameplay/raw-02-summit-rescue-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape"
+    },
+    {
+      "file": "raw-03-celebration-1920x1080.png",
+      "url": "./store-assets/mochi-tower/raw-gameplay/raw-03-celebration-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape"
+    },
+    {
+      "file": "raw-04-safety-net-1920x1080.png",
+      "url": "./store-assets/mochi-tower/raw-gameplay/raw-04-safety-net-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape"
+    },
+    {
+      "file": "raw-05-lavender-windmills-1920x1080.png",
+      "url": "./store-assets/mochi-tower/raw-gameplay/raw-05-lavender-windmills-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape"
+    },
+    {
+      "file": "raw-06-rainbow-palace-1920x1080.png",
+      "url": "./store-assets/mochi-tower/raw-gameplay/raw-06-rainbow-palace-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape"
+    },
+    {
+      "file": "raw-07-sakura-endless-1920x1080.png",
+      "url": "./store-assets/mochi-tower/raw-gameplay/raw-07-sakura-endless-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape"
+    },
+    {
+      "file": "raw-08-pet-garden-1920x1080.png",
+      "url": "./store-assets/mochi-tower/raw-gameplay/raw-08-pet-garden-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape"
+    },
+    {
+      "file": "raw-09-turkish-menu-1920x1080.png",
+      "url": "./store-assets/mochi-tower/raw-gameplay/raw-09-turkish-menu-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape"
+    },
+    {
+      "file": "raw-10-turkish-climb-1920x1080.png",
+      "url": "./store-assets/mochi-tower/raw-gameplay/raw-10-turkish-climb-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape"
+    }
+  ],
+  "metadataMarkdown": "# 📱 Mochi Tower Climb / Mochi Kule — App Store & Google Play Store Metadata\r\n\r\n---\r\n\r\n## 🇬🇧 English (Primary Global Listing)\r\n\r\n### 🍎 Apple App Store (EN)\r\n- **App Name (Max 30 chars):** `Mochi Tower Climb: 3D Pet Rescue` *(26 chars)*\r\n- **Subtitle (Max 30 chars):** `Climb Pastel Towers & Save!` *(27 chars)*\r\n- **Promotional Text (Max 170 chars):** `Climb dreamy pastel 3D towers, dodge candy-striped rotating obstacles, collect golden stars, and unlock heart cages to rescue 8 adorable pets across endless worlds!`\r\n- **Keywords (Max 100 chars):** `3d,tower,climb,cute,pastel,mochi,platformer,rescue,animals,bunny,obstacles,endless,arcade,jump,pets`\r\n- **Primary Category:** Games / Arcade\r\n- **Secondary Category:** Games / Casual\r\n- **Age Rating:** 4+\r\n\r\n### 🤖 Google Play Store (EN)\r\n- **App Name (Max 30 chars):** `Mochi Tower Climb: 3D Pet Rescue` *(26 chars)*\r\n- **Short Description (Max 80 chars):** `Climb pastel 3D towers, dodge spinning bars & rescue cute trapped animals!` *(74 chars)*\r\n- **Full Description:**\r\n```text\r\nClimb into a dreamy pastel 3D world in MOCHI TOWER!\r\n\r\nGuide Mochi up enchanting cylindrical 3D towers packed with spinning candy sweepers, counter-rotating macaron ledges, bouncing jelly pads, fluffy vanishing clouds, and playful windmills. Collect sparkling golden stars and berry gems along your climb, stay balanced on the rotating ledges, and spend your rewards at the summit to unlock the golden heart padlock and rescue adorable trapped pets!\r\n\r\n✨ KEY FEATURES:\r\n• Soft-Cute Minimal 3D World: Cozy matte pastel clay visuals, warm sunlight, drifting clouds, and smooth 60 FPS landscape gameplay built for mobile phones and tablets.\r\n• 8 Adorable Pets to Rescue & Collect: Free Boba the Sweet Bunny, Yuzu the Duckling, Milo the Kitty, Pudding the Corgi, Mochi Panda, Koko the Honey Bear, Yume the Cloud Fox, and Pengu the Penguin — watch them hop happily in your 3D tower garden!\r\n• 3D Firefighter Safety Rescue Net: Your first fall in every run is caught by a bouncy 3D Firefighter Safety Net that launches you right back to your last checkpoint flag!\r\n• Infinite Taller Towers across 8 Pastel Worlds: Progress beyond Level 5 into infinitely taller procedural towers across Strawberry Mochi, Matcha Cloud, Lavender Dream, Peach Sunset, Rainbow Palace, Blueberry Milk, Lemon Mochi, and Sakura Dusk with royal Super Towers every 5 levels!\r\n• Friendship Ranks & Golden Crowns: Keep climbing to level up your rescued friends and unlock gleaming golden crowns.\r\n• Ergonomic Landscape Controls: Dual-thumb touch controls with double jump and dash, plus warm procedural kalimba & music-box sound effects.\r\n\r\nCan you reach the summit and rescue every fluffy friend? Download Mochi Tower Climb and start climbing today!\r\n```\r\n\r\n---\r\n\r\n## 🇹🇷 Türkçe (Yerel Türkiye Mağaza Girişi)\r\n\r\n### 🍎 Apple App Store (TR)\r\n- **Uygulama Adı (Maks 30 karakter):** `Mochi Kule: 3D Hayvan Kurtar` *(28 karakter)*\r\n- **Alt Başlık (Maks 30 karakter):** `Pastel Kuleye Tırman & Kurtar` *(29 karakter)*\r\n- **Tanıtım Metni (Maks 170 karakter):** `Pastel 3D kulelere tırman, şeker çizgili döner engelleri aş, yıldız topla ve zirvede kafesteki 8 sevimli hayvancığı özgürlüğüne kavuştur!`\r\n- **Anahtar Kelimeler (Maks 100 karakter):** `3d,kule,tırmanma,sevimli,pastel,mochi,platform,kurtarma,hayvan,tavşan,engel,sonsuz,arcade,zıplama`\r\n\r\n### 🤖 Google Play Store (TR)\r\n- **Uygulama Adı (Maks 30 karakter):** `Mochi Kule: 3D Hayvan Kurtar` *(28 karakter)*\r\n- **Kısa Açıklama (Maks 80 karakter):** `Pastel 3D kulelere tırman, döner engelleri aş ve tatlı hayvancıkları kurtar!` *(76 karakter)*\r\n- **Tam Açıklama:**\r\n```text\r\nRüya gibi pastel 3D dünyasıyla MOCHİ KULE'ye hoş geldin!\r\n\r\nSevimli kahraman Mochi ile şeker çizgili döner çubuklar, zıt dönen makaron basamaklar, zıplatan mochi yastıkları, kaybolan bulutlar ve pervanelerle dolu 3D kulelere tırman. Tırmanırken parlayan altın yıldızları ve meyve kristallerini topla; zirveye ulaştığında topladığın ödüllerle kalp kilidini aç ve tutsak kalan tatlı hayvancıkları kurtar!\r\n\r\n✨ ÖNE ÇIKAN ÖZELLİKLER:\r\n• Yumuşak Pastel Minimal 3D Sanat Tarzı: Mat kil dokulu renkli kuleler, süzülen bulutlar ve telefonda yatay (landscape) 60 FPS akıcı oynanış.\r\n• Kurtarılmayı Bekleyen 8 Sevimli Dost: Tavşancık Boba, Ördekçik Yuzu, Kedicik Milo, Corgi Pudding, Bebek Panda, Ballı Ayıcık Koko, Bulut Tilkisi Yume ve Mochi Penguen — kurtardığın tüm dostlar 3D kule bahçende seninle!\r\n• 3D İtfaiye Can Kurtaran Filesi: İlk düşüşünde 3D itfaiye kurtarma filesi açılır ve seni son kontrol noktası bayrağına geri fırlatır!\r\n• 8 Pastel Dünyada Sonsuz Uzayan Kuleler: 5. seviyeden sonra 8 farklı pastel temada gittikçe yükselen sonsuz kuleler ve her 5 seviyede bir taçlı Süper Kuleler seni bekliyor!\r\n• Dostluk Rütbeleri & Altın Taçlar: Kurtardığın dostların kalp seviyesini yükselt ve altın taçlar kazan.\r\n• Rahat Yatay Kontroller: Çift zıplama ve atılma destekli iki başparmak kontrolleri, sıcak kalimba ve müzik kutusu ses efektleri.\r\n\r\nZirveye çıkıp tüm tatlı dostlarını kurtarmaya hazır mısın? Hemen indir ve tırmanışa başla!\r\n```\r\n\r\n---\r\n\r\n## 🛡️ Data Safety (Google Play) & App Privacy (Apple) Cevap Tablosu\r\n\r\n| Alan | Değer |\r\n|---|---|\r\n| **Veri Toplama (Data Collected)** | Evet (Yalnızca Google AdMob SDK aracılığıyla: Device or other IDs, Approximate location, App interactions, Diagnostics) |\r\n| **Kişisel Hesap / Giriş** | Yok (Kayıt/şifre gerekmez; ilerleme tamamen cihaz içi `localStorage` üzerinde saklanır) |\r\n| **Veri Şifreleme (In transit)** | Evet (HTTPS / TLS) |\r\n| **Reklam İçeriyor mu?** | Evet (`Ads: Yes` — Ödüllü video ve 3 ölüm sonrası geçiş reklamı) |\r\n| **Yaş Derecelendirmesi** | PEGI 3 / ESRB Everyone / Apple 4+ |\r\n| **Uygulama İçi Satın Alma (IAP)** | Yok (Tamamen ücretsiz, reklam destekli) |\r\n| **Ekran Yönü** | Yatay (`sensorLandscape` / `LandscapeLeft` & `LandscapeRight`) |\r\n",
+  "checklistMarkdown": "# 🚀 Mochi Tower Climb / Mochi Kule — Yayınlama Kontrol Listesi (Store Checklist)\r\n\r\nBu klasördeki (`store-assets/`) ve native `android/` + `ios/` projelerindeki tüm görseller **%100 gerçek çalışan 3D Three.js oyun motorundan (`GameEngine`)** canlı olarak yakalanmıştır.\r\n\r\n---\r\n\r\n## 📦 Üretilen Gerçek Oyun İçi Market Asset Paketi\r\n\r\n### 1. Oyun İkonu & Feature Graphic (%100 Oyun İçi 3D Render)\r\n- `app-store/icon-1024x1024.png` — 1024×1024 (Opak RGB PNG, App Store Connect uyumlu, gerçek oyun içi 3D Mochi + Taçlı Boba + 3D Kule & Yıldızlar)\r\n- `google-play/icon-512x512.png` — 512×512 (Google Play Store ikonu)\r\n- `google-play/feature-graphic-1024x500.png` — 1024×500 (Gerçek 3D panoramik sahne + 3D ikon + 3 gerçek oynanış kartı)\r\n\r\n### 2. Google Play Store Gerçek Oynanış Ekran Görüntüleri (`1920×1080` Landscape)\r\n1. `google-play/screenshot-01-climb-1920x1080.png` — Çilekli Mochi Kulesi tırmanışı, şeker çizgili döner çubuk üstünden zıplama (`Bar Hop! ✨`), kontrol noktası bayrağı ve altın yıldızlar.\r\n2. `google-play/screenshot-02-summit-rescue-1920x1080.png` — Zirvede kalp kilitli kafeste bekleyen Tavşancık Boba ve Mochi'nin çantasından kilide uçan 3D altın yıldızlar.\r\n3. `google-play/screenshot-03-celebration-1920x1080.png` — Kafesin açılmasıyla altın taçlı Boba ve Mochi'nin 3 yıldızlı zafer kutlaması.\r\n4. `google-play/screenshot-04-safety-net-1920x1080.png` — Matcha Bulut Kulesi'nde ilk düşüşte açılan 3D İtfaiye Can Kurtaran Filesi (`Firefighter Safety Net`).\r\n5. `google-play/screenshot-05-lavender-windmills-1920x1080.png` — Lavanta Rüyası kulesinde Mochi zıplama yastığı (`+3 ✨`), döner pervaneler ve marshmallow tamponlar.\r\n6. `google-play/screenshot-06-rainbow-palace-1920x1080.png` — Seviye 5 👑 Gökkuşağı Bulut Sarayı (Milestone Süper Kule) ve süzülen gökyüzü adaları.\r\n7. `google-play/screenshot-07-sakura-endless-1920x1080.png` — Seviye 8 Sakura Akşamı sonsuz kulesinde havada atılma (`DASH 💨`) ve yarı yol kutlaması (`Halfway to the Summit!`).\r\n8. `google-play/screenshot-08-pet-garden-1920x1080.png` — 3D Kule Bahçesinde kurtarılmış 8 taçlı sevimli hayvan dost ve seviye seçici menü.\r\n9. `google-play/screenshot-09-turkish-menu-1920x1080.png` — Türkçe mağaza girişi için Türkçe 3D Ana Menü & Kurtarılanlar Bahçesi (`8/8 · Top. 16`).\r\n10. `google-play/screenshot-10-turkish-climb-1920x1080.png` — Türkçe mağaza girişi için Türkçe oyun içi tırmanış (`Çubuk Atlama! ✨`, `Kurtarmaya Hazır!`).\r\n\r\n### 3. Apple App Store Gerçek Oynanış Ekran Görüntüleri\r\n- **iPhone 6.7\" Landscape (`2796×1290`):** `app-store/iphone-6.7-screenshot-01..08-2796x1290.png` (8 adet tam ekran gerçek 3D oynanış)\r\n- **iPhone 6.5\" Landscape (`2688×1242`):** `app-store/iphone-6.5-screenshot-01..08-2688x1242.png` (8 adet tam ekran gerçek 3D oynanış)\r\n- **iPad Pro 13\" Landscape (`2732×2048`):** `app-store/ipad-13-screenshot-01..08-2732x2048.png` (8 adet tam ekran gerçek 3D oynanış)\r\n\r\n### 4. Native Android & iOS İkon ve Splash Senkronizasyonu\r\n- Android `mipmap-mdpi..xxxhdpi` (`ic_launcher.png`, `ic_launcher_round.png`, `ic_launcher_foreground.png`) ve `drawable-*/splash.png` güncellendi.\r\n- iOS `AppIcon.appiconset/AppIcon-512@2x.png` ve `Splash.imageset/splash-2732x2732*.png` güncellendi.\r\n- `store-assets/privacy-policy.html`, `store-assets/app-ads.txt` ve `store-assets/store-metadata.md` hazırlandı.\r\n",
+  "privacyPolicyUrl": "./store-assets/mochi-tower/privacy-policy.html",
+  "totalImages": 48
+}
